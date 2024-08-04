@@ -1,7 +1,6 @@
 package org.joi.core;
 
 import basemod.BaseMod;
-import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
@@ -15,9 +14,9 @@ import org.joi.cards.skill.Defend;
 import org.joi.character.JoiCharacter;
 import org.joi.relics.ZhouXin;
 
-import static org.joi.character.JoiCharacter.PlayerColorEnum.JOI_CHARACTER;
-import static org.joi.character.JoiCharacter.PlayerColorEnum.JOI_YELLOW;
 import static org.joi.contents.ColorContents.*;
+import static org.joi.patches.PlayerColorEnum.JOI_CHARACTER;
+import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 @SpireInitializer
 public class SpireJoiSubscriber implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
@@ -57,7 +56,7 @@ public class SpireJoiSubscriber implements EditStringsSubscriber, EditCardsSubsc
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelic(new ZhouXin(), RelicType.SHARED);
+        BaseMod.addRelicToCustomPool(new ZhouXin(), JOI_YELLOW);
     }
 
     @Override

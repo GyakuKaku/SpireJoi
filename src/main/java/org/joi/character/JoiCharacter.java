@@ -3,7 +3,6 @@ package org.joi.character;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,13 +11,13 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.events.city.Vampires;
-import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Strike;
 import org.joi.cards.skill.Defend;
 import org.joi.contents.ColorContents;
+import org.joi.patches.PlayerColorEnum;
 import org.joi.relics.ZhouXin;
 
 import java.util.ArrayList;
@@ -219,22 +218,7 @@ public class JoiCharacter extends CustomPlayer {
 
     // 注意此处是在 MyCharacter 类内部的静态嵌套类中定义的新枚举值
     // 不可将该定义放在外部的 MyCharacter 类中，具体原因见《高级技巧 / 01 - Patch / SpireEnum》
-    public static class PlayerColorEnum {
-        @SpireEnum
-        public static PlayerClass JOI_CHARACTER;
 
-        // ***将CardColor和LibraryType的变量名改为你的角色的颜色名称，确保不会与其他mod冲突***
-        // ***并且名称需要一致！***
-        @SpireEnum
-        public static AbstractCard.CardColor JOI_YELLOW;
-    }
 
-    public static class PlayerLibraryEnum {
-        // ***将CardColor和LibraryType的变量名改为你的角色的颜色名称，确保不会与其他mod冲突***
-        // ***并且名称需要一致！***
 
-        // 这个变量未被使用（呈现灰色）是正常的
-        @SpireEnum
-        public static CardLibrary.LibraryType JOI_YELLOW;
-    }
 }
