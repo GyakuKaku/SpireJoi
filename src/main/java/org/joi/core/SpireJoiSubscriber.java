@@ -5,6 +5,7 @@ import basemod.helpers.RelicType;
 import basemod.interfaces.EditCardsSubscriber;
 import basemod.interfaces.EditCharactersSubscriber;
 import basemod.interfaces.EditRelicsSubscriber;
+import basemod.interfaces.EditStringsSubscriber;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -19,7 +20,7 @@ import static org.joi.character.JoiCharacter.PlayerColorEnum.JOI_YELLOW;
 import static org.joi.contents.ColorContents.*;
 
 @SpireInitializer
-public class SpireJoiSubscriber implements EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
+public class SpireJoiSubscriber implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
 
     public SpireJoiSubscriber() {
         BaseMod.subscribe(this);
@@ -59,9 +60,10 @@ public class SpireJoiSubscriber implements EditCardsSubscriber, EditCharactersSu
         BaseMod.addRelic(new ZhouXin(), RelicType.SHARED);
     }
 
+    @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(CardStrings.class, "ExampleResources/localization/ZHS/cards.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "ExampleResources/localization/ZHS/relics.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/ZHS/cards.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/ZHS/relics.json");
     }
 
 }
