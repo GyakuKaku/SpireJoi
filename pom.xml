@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>SpireJoi</groupId>
+    <artifactId>SpireJoi</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>SpireJoi</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <steamPath>E:\steam\steamapps</steamPath>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.megacrit.cardcrawl</groupId>
+            <artifactId>slaythespire</artifactId>
+            <scope>system</scope>
+            <version>2022-12-18</version>
+            <systemPath>${steamPath}/common/SlayTheSpire/desktop-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>basemod</groupId>
+            <artifactId>basemod</artifactId>
+            <scope>system</scope>
+            <version>5.54.1</version>
+            <systemPath>${steamPath}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>ModTheSpire</artifactId>
+            <scope>system</scope>
+            <version>3.30.0</version>
+            <systemPath>${steamPath}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <configuration>
+                            <target>
+                                <copy file="target/${project.artifactId}.jar" tofile="${steamPath}/common/SlayTheSpire/mods/${project.artifactId}.jar"/>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

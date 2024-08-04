@@ -1,0 +1,10 @@
+{
+  "modid": "SpireJoi",
+  "name": "轴伊Joi",
+  "author_list": ["Gyaku"],
+  "description": "一般通过无感情初中生",
+  "version": "0.0.1",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
+  "dependencies": ["basemod"]
+}
