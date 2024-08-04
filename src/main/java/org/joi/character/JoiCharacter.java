@@ -15,11 +15,11 @@ import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
-import com.megacrit.cardcrawl.relics.Vajra;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Strike;
 import org.joi.cards.skill.Defend;
 import org.joi.contents.ColorContents;
+import org.joi.relics.ZhouXin;
 
 import java.util.ArrayList;
 
@@ -27,7 +27,7 @@ import static org.joi.contents.TextContents.*;
 
 public class JoiCharacter extends CustomPlayer {
     // 火堆的人物立绘（行动前）
-    private static final String MY_CHARACTER_SHOULDER_1 = "joi/img/char/shoulder1.png";
+    private static final String MY_CHARACTER_SHOULDER_1 = "joi/img/char/shoulder.png";
     // 火堆的人物立绘（行动后）
     private static final String MY_CHARACTER_SHOULDER_2 = "joi/img/char/shoulder2.png";
     // 人物死亡图像
@@ -94,7 +94,7 @@ public class JoiCharacter extends CustomPlayer {
     // 初始遗物的ID，可以先写个原版遗物凑数
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(Vajra.ID);
+        retVal.add(ZhouXin.ID);
         return retVal;
     }
 

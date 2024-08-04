@@ -3,16 +3,19 @@ package org.joi.cards.skill;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static org.joi.character.JoiCharacter.PlayerColorEnum.JOI_YELLOW;
 
 public class Defend extends CustomCard {
     public static final String ID = "SpireJoi:Defend";
-    private static final String NAME = "防御";
+    private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
+    private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "joi/img/cards/strike.png";
     private static final int COST = 1;
-    private static final String DESCRIPTION = "获得 !B! 点 格挡 。";
+    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = JOI_YELLOW;
     private static final CardRarity RARITY = CardRarity.BASIC;
