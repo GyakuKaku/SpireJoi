@@ -1,16 +1,13 @@
-package org.joi.core;
+package org.joi;
 
+import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditCharactersSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.*;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import org.joi.cards.attack.Strike;
-import org.joi.cards.skill.Defend;
 import org.joi.character.JoiCharacter;
 import org.joi.relics.ZhouXin;
 
@@ -19,33 +16,21 @@ import static org.joi.patches.PlayerColorEnum.JOI_CHARACTER;
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 @SpireInitializer
-public class SpireJoiSubscriber implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber {
+public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber {
 
-    public SpireJoiSubscriber() {
+    public SpireJoi() {
         BaseMod.subscribe(this);
         BaseMod.addColor(JOI_YELLOW, JOI_COLOR, JOI_COLOR, JOI_COLOR, JOI_COLOR, JOI_COLOR, JOI_COLOR, JOI_COLOR, BG_ATTACK_512, BG_SKILL_512, BG_POWER_512, ENEYGY_ORB, BG_ATTACK_1024, BG_SKILL_1024, BG_POWER_1024, BIG_ORB, SMALL_ORB);
     }
 
     public static void initialize() {
-        new SpireJoiSubscriber();
+        new SpireJoi();
     }
 
     // 注册卡牌
     @Override
     public void receiveEditCards() {
-        /* BASIC基础牌 */
-        BaseMod.addCard(new Strike());
-        BaseMod.addCard(new Defend());
-        /* BASIC基础牌 end */
-
-        /* COMMON普通牌 */
-        /* COMMON普通牌 end */
-
-        /* UNCOMMON罕见牌 */
-        /* UNCOMMON罕见牌 end */
-
-        /* RARE稀有牌 */
-        /* RARE稀有牌 end */
+        (new AutoAdd("SpireJoi")).setDefaultSeen(true).cards();
     }
 
     // 当开始添加人物时，调用这个方法
@@ -60,9 +45,15 @@ public class SpireJoiSubscriber implements EditStringsSubscriber, EditCardsSubsc
     }
 
     @Override
+    public void receiveEditKeywords() {
+        BaseMod.addKeyword("SpireJoi", "睡意", new String[] {"睡意"}, "拥有 #y睡意 的角色下降等量攻击力  NL  SpireJoi:睡意 每回合会减少1点");
+    }
+
+    @Override
     public void receiveEditStrings() {
         BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/ZHS/cards.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/ZHS/relics.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "joi/localization/ZHS/powers.json");
     }
 
 }
