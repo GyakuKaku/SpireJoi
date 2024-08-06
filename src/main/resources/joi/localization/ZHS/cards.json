@@ -8,5 +8,9 @@
     "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "SpireJoi:Facade": {
+    "NAME": "硬撑",
+    "DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。"
   }
 }
