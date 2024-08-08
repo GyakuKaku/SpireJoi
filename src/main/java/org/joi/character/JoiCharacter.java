@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Strike;
+import org.joi.cards.power.Facade;
 import org.joi.cards.skill.Defend;
 import org.joi.contents.ColorContents;
 import org.joi.patches.PlayerColorEnum;
@@ -87,6 +88,7 @@ public class JoiCharacter extends CustomPlayer {
         for (int x = 0; x < 5; x++) {
             retVal.add(Defend.ID);
         }
+        retVal.add(Facade.ID);
         return retVal;
     }
 

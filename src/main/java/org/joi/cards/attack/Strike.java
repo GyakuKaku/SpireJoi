@@ -43,7 +43,7 @@ public class Strike extends CustomCard {
                                 damage,
                                 DamageInfo.DamageType.NORMAL
                         ),
-                        AbstractGameAction.AttackEffect.POISON
+                        AbstractGameAction.AttackEffect.BLUNT_LIGHT
                 )
         );
     }

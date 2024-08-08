@@ -8,6 +8,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
 import org.joi.relics.ZhouXin;
 
@@ -17,6 +19,7 @@ import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 @SpireInitializer
 public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber {
+    public static final Logger logger = LogManager.getLogger(SpireJoi.class.getName());
 
     public SpireJoi() {
         BaseMod.subscribe(this);
