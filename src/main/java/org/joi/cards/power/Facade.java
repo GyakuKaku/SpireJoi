@@ -30,11 +30,13 @@ public class Facade extends CustomCard {
         this.exhaust = true;
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int stack = this.magicNumber;
         this.addToBot(new ApplyPowerAction(p, p, new FacadePower(p, stack), stack));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();

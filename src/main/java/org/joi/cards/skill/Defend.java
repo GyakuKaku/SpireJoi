@@ -28,15 +28,16 @@ public class Defend extends CustomCard {
         this.tags.add(CardTags.STARTER_DEFEND);
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
     }
 
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(3);
         }
-
     }
 }

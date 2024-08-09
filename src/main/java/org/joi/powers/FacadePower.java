@@ -29,6 +29,7 @@ public class FacadePower extends AbstractPower {
     }
 
     // 被攻击时
+    @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.NORMAL &&
                 info.owner != null &&
@@ -42,7 +43,8 @@ public class FacadePower extends AbstractPower {
 
         return damageAmount;
     }
-
+    
+    @Override
     public void updateDescription() {
         this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
