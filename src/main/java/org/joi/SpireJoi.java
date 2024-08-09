@@ -49,7 +49,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword("SpireJoi", "睡意", new String[] {"睡意"}, "拥有 #y睡意 的角色下降等量攻击力  NL  SpireJoi:睡意 每回合会减少1点");
+        BaseMod.addKeyword("SpireJoi", "睡意", new String[] {"睡意"}, "拥有 #y睡意 的角色下降等量攻击力  NL  #y睡意 每回合会减少1点");
         BaseMod.addKeyword("SpireJoi", "硬撑", new String[] {"硬撑"}, "#y硬撑 可以为你抵挡一次 #y抵挡 一次致命攻击。");
     }
 
