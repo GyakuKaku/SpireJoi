@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.Color;
 
 public class ColorContents {
     // 人物选择界面按钮的图片
-    public static final String JOI_CHARACTER_BUTTON = "joi/img/char/Character_Button.png";
+    public static final String JOI_CHARACTER_BUTTON = "joi/img/char/character_button.png";
     // 人物选择界面的立绘
     public static final String JOI_CHARACTER_PORTRAIT = "joi/img/char/Character_Portrait.png";
     // 攻击牌的背景（小尺寸）
