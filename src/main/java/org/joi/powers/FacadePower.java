@@ -25,7 +25,6 @@ public class FacadePower extends AbstractPower {
         this.img = ImageMaster.loadImage(IMG_PATH);
         this.type = PowerType.BUFF;
         this.amount = amount;
-        this.loadRegion("buffer");
         this.updateDescription();
     }
 
