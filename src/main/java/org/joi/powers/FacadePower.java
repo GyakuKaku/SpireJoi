@@ -31,8 +31,7 @@ public class FacadePower extends AbstractPower {
 
     // 被攻击时
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info.type != DamageInfo.DamageType.THORNS &&
-                info.type != DamageInfo.DamageType.HP_LOSS &&
+        if (info.type == DamageInfo.DamageType.NORMAL &&
                 info.owner != null &&
                 info.owner != this.owner &&
                 damageAmount >= this.owner.currentHealth &&
