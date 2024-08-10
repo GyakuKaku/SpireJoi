@@ -37,7 +37,7 @@ public class FacadePower extends AbstractPower {
                 damageAmount >= this.owner.currentHealth &&
                 damageAmount > 0
         ) {
-            damageAmount = 0;
+            damageAmount = this.owner.currentHealth - 1;
             this.addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
         }
 

@@ -2,8 +2,8 @@
   "SpireJoi:FacadePower": {
     "NAME": "硬撑",
     "DESCRIPTIONS": [
-      "本场战斗中可避免 #b",
-      "次致命伤害。"
+      "本场战斗中可 #b",
+      "次在收到致命伤害时保留1点生命。"
     ]
   }
 }
