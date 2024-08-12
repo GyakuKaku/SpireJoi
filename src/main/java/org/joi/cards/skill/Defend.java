@@ -14,7 +14,7 @@ public class Defend extends CustomCard {
     public static final String ID = "SpireJoi:Defend";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/strike.png";
+    private static final String IMG_PATH = "joi/img/cards/defend.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
