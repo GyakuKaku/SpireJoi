@@ -3,15 +3,17 @@ package org.joi;
 import basemod.AutoAdd;
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
 import org.joi.relics.ZhouXin;
+
+import java.nio.charset.StandardCharsets;
 
 import static org.joi.contents.ColorContents.*;
 import static org.joi.patches.PlayerColorEnum.JOI_CHARACTER;
@@ -49,8 +51,12 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword("SpireJoi", "睡意", new String[] {"睡意"}, "拥有 #y睡意 的生物下降等量攻击力。  NL  #y睡意 每回合会减少 #b1 层，  NL  拥有 #b5 层 #y睡意 的生物会陷入睡眠。");
-        BaseMod.addKeyword("SpireJoi", "硬撑", new String[] {"硬撑"}, "#y硬撑 可以为你抵挡一次 #y抵挡 一次致命攻击。");
+        Gson gson = new Gson();
+        String json = Gdx.files.internal("joi/localization/ZHS/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
+        for (Keyword keyword : keywords) {
+            BaseMod.addKeyword("SpireJoi", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
+        }
     }
 
     @Override
