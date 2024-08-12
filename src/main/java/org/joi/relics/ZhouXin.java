@@ -22,7 +22,6 @@ public class ZhouXin extends CustomRelic {
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
     private static final RelicStrings Relic_STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
 
-
     public ZhouXin() {
         super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
     }

@@ -37,21 +37,18 @@ public class SleepyPower extends AbstractPower {
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            if (!this.owner.isPlayer && AbstractDungeon.player.hasRelic("Paper Crane")) {
-                return damage * 0.6F;
-            }
             return damage * 0.75F;
         }
         return damage;
     }
 
-    // 每回合减少
+    // 每回合减少一层
     @Override
     public void atEndOfRound() {
         if (this.amount == 0) {
-            addToBot((AbstractGameAction) new RemoveSpecificPowerAction(this.owner, this.owner, "Weakened"));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Weakened"));
         } else {
-            addToBot((AbstractGameAction) new ReducePowerAction(this.owner, this.owner, "Weakened", 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, "Weakened", 1));
         }
     }
 
@@ -68,6 +65,6 @@ public class SleepyPower extends AbstractPower {
     
     @Override
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 }
