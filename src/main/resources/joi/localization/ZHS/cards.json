@@ -11,8 +11,8 @@
   },
   "SpireJoi:StartLive": {
     "NAME": "开播",
-    "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 SpireJoi:睡意。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 SpireJoi:睡意。"
+    "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意。"
   },
   "SpireJoi:Defend": {
     "NAME": "防御",
@@ -21,6 +21,6 @@
   },
   "SpireJoi:Facade": {
     "NAME": "硬撑",
-    "DESCRIPTION": "获得 !M! 层 SpireJoi:硬撑 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。"
   }
 }

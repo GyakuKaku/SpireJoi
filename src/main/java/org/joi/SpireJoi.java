@@ -53,9 +53,10 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     public void receiveEditKeywords() {
         Gson gson = new Gson();
         String json = Gdx.files.internal("joi/localization/ZHS/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
-        Keyword[] keywords = gson.fromJson(json, Keyword[].class);
-        for (Keyword keyword : keywords) {
-            BaseMod.addKeyword("SpireJoi", keyword.NAMES[0], keyword.NAMES, keyword.DESCRIPTION);
+        KeywordsBean bean = gson.fromJson(json, KeywordsBean.class);
+        for (Keyword keyword : bean.keywords) {
+            logger.info("加载关键字 : " + keyword.NAMES[0]);
+            BaseMod.addKeyword(keyword.NAMES, keyword.DESCRIPTION);
         }
     }
 
@@ -64,5 +65,9 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
         BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/ZHS/cards.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/ZHS/relics.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, "joi/localization/ZHS/powers.json");
+    }
+
+    static class KeywordsBean {
+        Keyword[] keywords;
     }
 }

@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.infos.SleepyDamageInfo;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -31,6 +32,7 @@ public class StartLive extends CustomCard {
         this.baseDamage = 6;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTagEnum.SLEEPY);
     }
 
     @Override
