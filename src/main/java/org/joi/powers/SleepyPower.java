@@ -46,9 +46,9 @@ public class SleepyPower extends AbstractPower {
     @Override
     public void atEndOfRound() {
         if (this.amount == 0) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Weakened"));
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         } else {
-            addToBot(new ReducePowerAction(this.owner, this.owner, "Weakened", 1));
+            addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
         }
     }
 
@@ -57,8 +57,12 @@ public class SleepyPower extends AbstractPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info instanceof SleepyDamageInfo) {
             SpireJoi.logger.info("受到催眠伤害");
+            // 不做特殊处理
         } else {
             SpireJoi.logger.info("受到普通伤害");
+            // 增加伤害并结束睡意状态
+            damageAmount = damageAmount + this.amount;
+            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         }
         return damageAmount;
     }
