@@ -73,22 +73,19 @@ public class JoiCharacter extends CustomPlayer {
         // AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
         // e.setTime(e.getEndTime() * MathUtils.random());
         // e.setTimeScale(1.2F);
-
-
     }
 
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        // 5张打击
-        for (int x = 0; x < 5; x++) {
+        // 4张打击
+        for (int x = 0; x < 4; x++) {
             retVal.add(Strike.ID);
         }
-        // 5张防御
-        for (int x = 0; x < 5; x++) {
+        // 4张防御
+        for (int x = 0; x < 4; x++) {
             retVal.add(Defend.ID);
         }
-        retVal.add(Facade.ID);
         return retVal;
     }
 
@@ -215,12 +212,4 @@ public class JoiCharacter extends CustomPlayer {
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
         return new AbstractGameAction.AttackEffect[]{AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_HEAVY, AbstractGameAction.AttackEffect.FIRE, AbstractGameAction.AttackEffect.SLASH_DIAGONAL};
     }
-
-    // 以下为原版人物枚举、卡牌颜色枚举扩展的枚举，需要写，接下来要用
-
-    // 注意此处是在 MyCharacter 类内部的静态嵌套类中定义的新枚举值
-    // 不可将该定义放在外部的 MyCharacter 类中，具体原因见《高级技巧 / 01 - Patch / SpireEnum》
-
-
-
 }
