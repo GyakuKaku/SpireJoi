@@ -64,7 +64,7 @@ public class Cry extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(3);
         }
     }
 }
