@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import org.joi.cards.attack.Cry;
 import org.joi.cards.attack.Strike;
 import org.joi.cards.power.Facade;
 import org.joi.cards.skill.Defend;
@@ -66,13 +67,6 @@ public class JoiCharacter extends CustomPlayer {
                 200.0F, 220.0F, // 人物碰撞箱大小，越大的人物模型这个越大
                 new EnergyManager(3) // 初始每回合的能量
         );
-
-
-        // 如果你的人物没有动画，那么这些不需要写
-        // this.loadAnimation("ExampleModResources/img/char/character.atlas", "ExampleModResources/img/char/character.json", 1.8F);
-        // AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
-        // e.setTime(e.getEndTime() * MathUtils.random());
-        // e.setTimeScale(1.2F);
     }
 
     // 初始卡组的ID，可直接写或引用变量
@@ -86,6 +80,7 @@ public class JoiCharacter extends CustomPlayer {
         for (int x = 0; x < 4; x++) {
             retVal.add(Defend.ID);
         }
+        retVal.add(Cry.ID);
         return retVal;
     }
 

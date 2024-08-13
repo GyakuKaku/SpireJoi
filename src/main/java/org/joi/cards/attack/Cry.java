@@ -28,7 +28,7 @@ public class Cry extends CustomCard {
 
     public Cry() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 4;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.isMultiDamage = true;
