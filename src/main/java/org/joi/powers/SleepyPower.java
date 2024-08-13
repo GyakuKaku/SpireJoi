@@ -33,14 +33,14 @@ public class SleepyPower extends AbstractPower {
         this.updateDescription();
     }
 
-    // 减少伤害
-    @Override
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (type == DamageInfo.DamageType.NORMAL) {
-            return damage * 0.75F;
-        }
-        return damage;
-    }
+//    // 减少伤害
+//    @Override
+//    public float atDamageGive(float damage, DamageInfo.DamageType type) {
+//        if (type == DamageInfo.DamageType.NORMAL) {
+//            return damage * 0.75F;
+//        }
+//        return damage;
+//    }
 
     // 每回合减少一层
     @Override
@@ -76,6 +76,8 @@ public class SleepyPower extends AbstractPower {
             SpireJoi.logger.info("受到普通伤害");
             // 睡意状态
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            // 到五层转为昏睡状态
+
         }
         return damageAmount;
     }
