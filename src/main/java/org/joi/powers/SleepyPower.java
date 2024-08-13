@@ -47,13 +47,8 @@ public class SleepyPower extends AbstractPower {
     @Override
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
+
         this.amount += stackAmount;
-
-        // 已经进入困倦状态不会再叠在睡意
-        if (this.owner.hasPower("SpireJoi:SlumberPower")) {
-            return;
-        }
-
         if (this.amount >= 5) {
             // 叠到五层取消并进入困倦状态
             SpireJoi.logger.info("睡意叠加到五层");
