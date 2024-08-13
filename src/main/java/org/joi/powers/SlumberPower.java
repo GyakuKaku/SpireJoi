@@ -51,15 +51,7 @@ public class SlumberPower extends AbstractPower {
     // 被攻击时
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
-        if (card.hasTag(CardTagEnum.SLEEPY)) {
-            SpireJoi.logger.info("计算催眠伤害");
-            // 不做特殊处理
-        } else {
-            SpireJoi.logger.info("计算普通伤害");
-            // 增加伤害并结束睡意状态
-            damage = damage + this.amount;
-        }
-        return damage;
+        return damage * 2;
     }
 
     // 被攻击时

@@ -44,6 +44,26 @@ public class SleepyPower extends AbstractPower {
         }
     }
 
+    @Override
+    public void stackPower(int stackAmount) {
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
+
+        // 已经进入困倦状态不会再叠在睡意
+        if (this.owner.hasPower("SpireJoi:SlumberPower")) {
+            return;
+        }
+
+        if (this.amount >= 5) {
+            // 叠到五层取消并进入困倦状态
+            SpireJoi.logger.info("睡意叠加到五层");
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new SlumberPower(this.owner)));
+        } else {
+            SpireJoi.logger.info("睡意叠加:" + this.amount);
+        }
+    }
+
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
@@ -56,21 +76,6 @@ public class SleepyPower extends AbstractPower {
             damage = damage + this.amount;
         }
         return damage;
-    }
-
-    // 叠到五层取消并进入困倦状态
-    @Override
-    public void stackPower(int stackAmount) {
-        this.fontScale = 8.0F;
-        this.amount += stackAmount;
-
-        if (this.amount >= 5) {
-            SpireJoi.logger.info("睡意叠加到五层");
-            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-            this.addToBot(new ApplyPowerAction(this.owner, this.owner, new SlumberPower(this.owner)));
-        } else {
-            SpireJoi.logger.info("睡意叠加:" + this.amount);
-        }
     }
 
     // 被攻击时
@@ -86,7 +91,6 @@ public class SleepyPower extends AbstractPower {
         }
         return damageAmount;
     }
-
     
     @Override
     public void updateDescription() {
