@@ -6,8 +6,10 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -42,24 +44,27 @@ public class Cry extends CustomCard {
                         AbstractGameAction.AttackEffect.BLUNT_LIGHT
                 )
         );
-        this.addToBot(
-                new ApplyPowerAction(
-                        m,
-                        p,
-                        new SleepyPower(
-                                m,
-                                this.magicNumber
-                        ),
-                        this.magicNumber
-                )
-        );
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            this.addToBot(
+                    new ApplyPowerAction(
+                            mo,
+                            p,
+                            new VulnerablePower(
+                                    mo,
+                                    this.magicNumber,
+                                    false
+                            ),
+                            this.magicNumber
+                    )
+            );
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(4);
         }
     }
 }
