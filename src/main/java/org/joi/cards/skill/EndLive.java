@@ -36,7 +36,7 @@ public class EndLive extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
         // 随机目标
-        AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(true);
+        AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
         if (target != null) {
             this.addToBot(
                     new ApplySleepyAction(
