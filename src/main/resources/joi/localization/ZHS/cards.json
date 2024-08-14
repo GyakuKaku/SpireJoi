@@ -14,6 +14,12 @@
     "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
   },
+  "SpireJoi:Trumpets": {
+    "NAME": "喇叭",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
+  },
+
   "SpireJoi:Defend": {
     "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。",
@@ -29,9 +35,25 @@
     "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。"
   },
+  "SpireJoi:SlackOff": {
+    "NAME": "播前小憩(未实现)",
+    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗",
+    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗"
+  },
+
   "SpireJoi:Facade": {
     "NAME": "硬撑",
-    "DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 层 硬撑 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 硬撑 。"
+  },
+  "SpireJoi:LiveReward": {
+    "NAME": "直播打赏(未实现)",
+    "DESCRIPTION": "你每打出一张直播牌，获得 !M! 金币。",
+    "UPGRADE_DESCRIPTION": "你每打出一张直播牌，获得 !M! 金币。"
+  },
+  "SpireJoi:sleepWhenFree": {
+    "NAME": "有空就睡觉(未实现)",
+    "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。",
+    "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。"
   }
 }
