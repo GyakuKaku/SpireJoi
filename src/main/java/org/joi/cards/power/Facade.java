@@ -26,8 +26,6 @@ public class Facade extends CustomCard {
     public Facade() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 1;
-        // 消耗
-        this.exhaust = true;
     }
 
     @Override
