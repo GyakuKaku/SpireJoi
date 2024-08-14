@@ -21,7 +21,7 @@ public class SlumberPower extends AbstractPower {
     // 能力的名称
     private static final String NAME = powerStrings.NAME;
 
-    private static final String IMG_PATH = "joi/img/icons/facade.png";
+    private static final String IMG_PATH = "joi/img/icons/slumber.png";
 
     public SlumberPower(AbstractCreature owner) {
         this.name = NAME;
