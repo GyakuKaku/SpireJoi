@@ -19,8 +19,19 @@
     "DESCRIPTION": "获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
   },
+  "SpireJoi:EndLive": {
+    "NAME": "下播",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，给予随机一名敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予随机一名敌人 !M! 层 睡意 。"
+  },
+  "SpireJoi:Yawn": {
+    "NAME": "哈欠",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。"
+  },
   "SpireJoi:Facade": {
     "NAME": "硬撑",
-    "DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。"
+    "DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 硬撑 。 NL 消耗 。"
   }
 }

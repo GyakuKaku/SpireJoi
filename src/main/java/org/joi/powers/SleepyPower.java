@@ -62,6 +62,12 @@ public class SleepyPower extends AbstractPower {
 
     // 计算被攻击伤害
     @Override
+    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
+        return damage;
+    }
+
+    // 计算被攻击伤害
+    @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
         if (card.hasTag(CardTagEnum.SLEEPY)) {
             SpireJoi.logger.info("计算催眠伤害");
@@ -71,7 +77,7 @@ public class SleepyPower extends AbstractPower {
             // 增加伤害
             damage = damage + this.amount;
         }
-        return damage;
+        return this.atDamageReceive(damage, damageType);
     }
 
     // 被攻击时

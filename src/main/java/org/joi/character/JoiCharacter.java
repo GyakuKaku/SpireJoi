@@ -16,8 +16,8 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Cry;
 import org.joi.cards.attack.Strike;
-import org.joi.cards.power.Facade;
 import org.joi.cards.skill.Defend;
+import org.joi.cards.skill.EndLive;
 import org.joi.contents.ColorContents;
 import org.joi.patches.PlayerColorEnum;
 import org.joi.relics.ZhouXin;
@@ -81,6 +81,7 @@ public class JoiCharacter extends CustomPlayer {
             retVal.add(Defend.ID);
         }
         retVal.add(Cry.ID);
+        retVal.add(EndLive.ID);
         return retVal;
     }
 

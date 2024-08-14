@@ -1,6 +1,5 @@
 package org.joi.powers;
 
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -9,9 +8,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import org.joi.SpireJoi;
-import org.joi.infos.SleepyDamageInfo;
-import org.joi.patches.CardTagEnum;
 
 public class SlumberPower extends AbstractPower {
     // 能力的ID
@@ -50,25 +46,21 @@ public class SlumberPower extends AbstractPower {
         addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
     }
 
-    // 被攻击时
+    // 计算被攻击伤害
+    @Override
+    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
+        return damage * 2;
+    }
+
+    // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
-        return damage * 2;
+        return this.atDamageReceive(damage, damageType);
     }
 
     // 被攻击时
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info instanceof SleepyDamageInfo) {
-            SpireJoi.logger.info("受到催眠伤害");
-            // 不做特殊处理
-        } else {
-            SpireJoi.logger.info("受到普通伤害");
-            // 睡意状态
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-            // 到五层转为困倦状态
-
-        }
         return damageAmount;
     }
     
