@@ -16,7 +16,6 @@ public class SlumberPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
     private static final String NAME = powerStrings.NAME;
-
     private static final String IMG_PATH = "joi/img/icons/slumber.png";
 
     public SlumberPower(AbstractCreature owner) {

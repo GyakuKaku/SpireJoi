@@ -73,7 +73,7 @@ public class SleepyPower extends AbstractPower {
             SpireJoi.logger.info("计算催眠伤害");
             // 不做特殊处理
         } else {
-            SpireJoi.logger.info("计算普通伤害");
+//            SpireJoi.logger.info("计算普通伤害");
             // 增加伤害
             damage = damage + this.amount;
         }
