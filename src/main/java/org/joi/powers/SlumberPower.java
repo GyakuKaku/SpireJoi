@@ -30,6 +30,8 @@ public class SlumberPower extends AbstractPower {
         this.img = ImageMaster.loadImage(IMG_PATH);
         this.type = PowerType.DEBUFF;
         this.amount = -1;
+        // 先结算易伤和睡意
+        this.priority = 15;
         this.updateDescription();
     }
 

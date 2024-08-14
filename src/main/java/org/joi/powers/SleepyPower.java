@@ -21,7 +21,6 @@ public class SleepyPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
     private static final String NAME = powerStrings.NAME;
-
     private static final String IMG_PATH = "joi/img/icons/facade.png";
 
     public SleepyPower(AbstractCreature owner, int amount) {
@@ -31,6 +30,8 @@ public class SleepyPower extends AbstractPower {
         this.img = ImageMaster.loadImage(IMG_PATH);
         this.type = PowerType.DEBUFF;
         this.amount = amount;
+        // 先结算易伤
+        this.priority = 10;
         this.updateDescription();
     }
 
