@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.joi.SpireJoi;
 import org.joi.patches.CardTagEnum;
 
 public class LiveRewardPower extends AbstractPower {
@@ -33,15 +34,20 @@ public class LiveRewardPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
+        SpireJoi.logger.info("LiveRewardPower:owner" + this.owner.isPlayer);
         if (this.owner != null &&
                 this.owner.isPlayer &&
                 card != null &&
                 card.hasTag(CardTagEnum.LIVE) &&
                 this.amount * 20 > this.earnedGolds
         ) {
+            SpireJoi.logger.info("LiveRewardPower:计算金币");
             int gold = Math.min(this.amount, this.amount * 20 - this.earnedGolds);
+            SpireJoi.logger.info("LiveRewardPower:计算金币" + gold);
+
             this.owner.gainGold(gold);
             this.earnedGolds = this.earnedGolds + gold;
+            this.updateDescription();
             flash();
         }
     }
