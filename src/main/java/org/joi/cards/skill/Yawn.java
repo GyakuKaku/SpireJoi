@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.joi.actions.ApplySleepyAction;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -29,6 +30,7 @@ public class Yawn extends CustomCard {
     public Yawn() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 3;
+        this.tags.add(CardTagEnum.SLEEPY);
     }
 
     @Override
@@ -63,6 +65,7 @@ public class Yawn extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(2);
+            initializeDescription();
         }
     }
 }

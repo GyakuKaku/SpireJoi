@@ -15,7 +15,7 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
   },
   "SpireJoi:Trumpets": {
-    "NAME": "喇叭",
+    "NAME": "喇叭(未实现)",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
@@ -47,9 +47,9 @@
     "UPGRADE_DESCRIPTION": "获得 !M! 层 硬撑 。"
   },
   "SpireJoi:LiveReward": {
-    "NAME": "直播打赏(未实现)",
-    "DESCRIPTION": "你每打出一张直播牌，获得 !M! 金币。",
-    "UPGRADE_DESCRIPTION": "你每打出一张直播牌，获得 !M! 金币。"
+    "NAME": "直播打赏",
+    "DESCRIPTION": "你每打出一张直播相关卡牌，获得1金币(每层能力最多提供20金币)。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 你每打出一张直播相关卡牌，获得1金币(每层能力最多提供20金币)。"
   },
   "SpireJoi:sleepWhenFree": {
     "NAME": "有空就睡觉(未实现)",
