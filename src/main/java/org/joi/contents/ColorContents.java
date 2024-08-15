@@ -6,7 +6,7 @@ public class ColorContents {
     // 人物选择界面按钮的图片
     public static final String JOI_CHARACTER_BUTTON = "joi/img/char/character_button.png";
     // 人物选择界面的立绘
-    public static final String JOI_CHARACTER_PORTRAIT = "joi/img/char/Character_Portrait.png";
+    public static final String JOI_CHARACTER_PORTRAIT = "joi/img/char/character_portrait.png";
     // 攻击牌的背景（小尺寸）
     public static final String BG_ATTACK_512 = "joi/img/512/bg_attack_512.png";
     // 能力牌的背景（小尺寸）
