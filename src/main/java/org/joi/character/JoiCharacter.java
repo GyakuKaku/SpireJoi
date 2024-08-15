@@ -164,7 +164,7 @@ public class JoiCharacter extends CustomPlayer {
     // 自定义模式选择你的人物时播放的音效
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "ATTACK_HEAVY";
+        return "joiCharSelected";
     }
 
     // 游戏中左上角显示在你的名字之后的人物名称

@@ -20,7 +20,7 @@ import static org.joi.patches.PlayerColorEnum.JOI_CHARACTER;
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 @SpireInitializer
-public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber {
+public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
     public static final Logger logger = LogManager.getLogger(SpireJoi.class.getName());
 
     public SpireJoi() {
@@ -47,6 +47,11 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new ZhouXin(), JOI_YELLOW);
+    }
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("joiCharSelected", "joi/audio/character_selected.ogg");
     }
 
     @Override
