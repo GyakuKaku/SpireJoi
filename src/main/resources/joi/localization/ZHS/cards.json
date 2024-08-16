@@ -36,7 +36,7 @@
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。"
   },
   "SpireJoi:SlackOff": {
-    "NAME": "播前小憩(未实现)",
+    "NAME": "播前小憩",
     "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗",
     "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗"
   },
