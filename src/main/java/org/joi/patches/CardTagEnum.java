@@ -8,6 +8,8 @@ public class CardTagEnum {
   public static AbstractCard.CardTags SLEEPY;
   @SpireEnum
   public static AbstractCard.CardTags LIVE;
+  @SpireEnum
+  public static AbstractCard.CardTags SCARE;
   public CardTagEnum() {
   }
 }

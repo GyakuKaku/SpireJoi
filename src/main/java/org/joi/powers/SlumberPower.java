@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.joi.patches.CardTagEnum;
 
 public class SlumberPower extends AbstractPower {
     // 能力的ID
@@ -54,7 +55,12 @@ public class SlumberPower extends AbstractPower {
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
-        return this.atDamageReceive(damage, damageType);
+        if (card != null && card.hasTag(CardTagEnum.SCARE)) {
+            // 惊吓造成三倍伤害
+            return damage * 3;
+        } else {
+            return this.atDamageReceive(damage, damageType);
+        }
     }
 
     // 被攻击时

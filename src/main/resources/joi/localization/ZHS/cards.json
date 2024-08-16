@@ -15,8 +15,8 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
   },
   "SpireJoi:Trumpets": {
-    "NAME": "喇叭(未实现)",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
+    "NAME": "喇叭",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
 
