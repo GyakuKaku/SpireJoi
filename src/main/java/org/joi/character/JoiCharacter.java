@@ -3,6 +3,7 @@ package org.joi.character;
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -145,9 +146,13 @@ public class JoiCharacter extends CustomPlayer {
     }
 
     // 人物选择界面点击你的人物按钮时触发的方法，这里为屏幕轻微震动
-    @Override
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.screenShake.shake(ScreenShake.ShakeIntensity.MED, ScreenShake.ShakeDur.SHORT, false);
+        CardCrawlGame.sound.playA("joiCharSelected", MathUtils.random(-0.1F, 0.1F));
+        CardCrawlGame.screenShake.shake(
+                ScreenShake.ShakeIntensity.MED,
+                ScreenShake.ShakeDur.SHORT,
+                false
+        );
     }
 
     // 碎心图片
