@@ -1,7 +1,6 @@
 package org.joi.relics;
 
 import basemod.abstracts.CustomRelic;
-import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
@@ -30,13 +29,13 @@ public class Cat extends CustomRelic {
     public void atTurnStart() {
         Random random = AbstractDungeon.cardRandomRng;
         // 0.3概率造成伤害
-        int attackCheck = MathUtils.random(10);
+        int attackCheck = random.random(10);
         SpireJoi.logger.info("attackCheck:" + attackCheck);
         if (attackCheck > 2) {
             return;
         }
         // 0.2概率打玩家
-        int attackPlayerCheck = MathUtils.random(10);
+        int attackPlayerCheck = random.random(10);
         SpireJoi.logger.info("attackPlayerCheck:" + attackPlayerCheck);
         if (attackPlayerCheck > 1) {
             // 攻击敌人

@@ -147,7 +147,7 @@ public class JoiCharacter extends CustomPlayer {
 
     // 人物选择界面点击你的人物按钮时触发的方法，这里为屏幕轻微震动
     public void doCharSelectScreenSelectEffect() {
-        CardCrawlGame.sound.playA("joiCharSelected", MathUtils.random(-0.1F, 0.1F));
+        CardCrawlGame.sound.playA("joiSelected", MathUtils.random(-0.1F, 0.1F));
         CardCrawlGame.screenShake.shake(
                 ScreenShake.ShakeIntensity.MED,
                 ScreenShake.ShakeDur.SHORT,
@@ -169,7 +169,7 @@ public class JoiCharacter extends CustomPlayer {
     // 自定义模式选择你的人物时播放的音效
     @Override
     public String getCustomModeCharacterButtonSoundKey() {
-        return "joiCharSelected";
+        return "joiSelected";
     }
 
     // 游戏中左上角显示在你的名字之后的人物名称

@@ -7,10 +7,14 @@ import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.Keyword;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
+import org.joi.relics.Cat;
 import org.joi.relics.ZhouXin;
 
 import java.nio.charset.StandardCharsets;
@@ -47,11 +51,12 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     @Override
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new ZhouXin(), JOI_YELLOW);
+        BaseMod.addRelicToCustomPool(new Cat(), JOI_YELLOW);
     }
 
     @Override
     public void receiveAddAudio() {
-        BaseMod.addAudio("joiCharSelected", "joi/audio/character_selected.ogg");
+        BaseMod.addAudio("joiSelected", "joi/audio/joi_selected.mp3");
     }
 
     @Override
