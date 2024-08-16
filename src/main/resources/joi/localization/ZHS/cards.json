@@ -19,6 +19,11 @@
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
+  "SpireJoi:ZhouXinHelp": {
+    "NAME": "轴芯的支援(未实现)",
+    "DESCRIPTION": "随机对敌人造成 !D! 点伤害X次。",
+    "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害X次。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御",
@@ -37,8 +42,13 @@
   },
   "SpireJoi:SlackOff": {
     "NAME": "播前小憩",
-    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗",
-    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗"
+    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
+  },
+  "SpireJoi:BottleCap": {
+    "NAME": "拧瓶盖练习(未实现)",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
   },
 
   "SpireJoi:Facade": {
