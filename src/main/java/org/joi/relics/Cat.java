@@ -8,8 +8,6 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.random.Random;
-import org.joi.SpireJoi;
 
 public class Cat extends CustomRelic {
     // 遗物ID
@@ -27,27 +25,24 @@ public class Cat extends CustomRelic {
 
     @Override
     public void atTurnStart() {
-        Random random = AbstractDungeon.cardRandomRng;
         // 0.3概率造成伤害
-        int attackCheck = random.random(10);
-        SpireJoi.logger.info("attackCheck:" + attackCheck);
-        if (attackCheck > 2) {
+        boolean attackCheck = AbstractDungeon.miscRng.randomBoolean(0.3F);
+        if (!attackCheck) {
             return;
         }
         // 0.2概率打玩家
-        int attackPlayerCheck = random.random(10);
-        SpireJoi.logger.info("attackPlayerCheck:" + attackPlayerCheck);
-        if (attackPlayerCheck > 1) {
+        boolean attackPlayerCheck = AbstractDungeon.miscRng.randomBoolean(0.2F);
+        if (attackPlayerCheck) {
+            // 攻击玩家
+            this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+            this.addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 5, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        } else {
             // 攻击敌人
             AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
             if (target != null) {
                 this.addToBot(new RelicAboveCreatureAction(target, this));
                 this.addToBot(new DamageAction(target, new DamageInfo(AbstractDungeon.player, 5, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
             }
-        } else {
-            // 攻击玩家
-            this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            this.addToBot(new DamageAction(AbstractDungeon.player, new DamageInfo(AbstractDungeon.player, 5, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
     }
 

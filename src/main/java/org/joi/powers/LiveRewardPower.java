@@ -44,11 +44,11 @@ public class LiveRewardPower extends AbstractPower {
             SpireJoi.logger.info("LiveRewardPower:计算金币");
             int gold = Math.min(this.amount, this.amount * 20 - this.earnedGolds);
             SpireJoi.logger.info("LiveRewardPower:计算金币" + gold);
-
+            CardCrawlGame.sound.play("GOLD_GAIN");
             this.owner.gainGold(gold);
             this.earnedGolds = this.earnedGolds + gold;
             this.updateDescription();
-            flash();
+//            flash();
         }
     }
     
