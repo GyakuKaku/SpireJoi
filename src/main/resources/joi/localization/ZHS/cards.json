@@ -61,7 +61,12 @@
     "DESCRIPTION": "你每打出一张直播相关卡牌，获得1金币(每层能力最多提供20金币)。",
     "UPGRADE_DESCRIPTION": " 固有 。 NL 你每打出一张直播相关卡牌，获得1金币(每层能力最多提供20金币)。"
   },
-  "SpireJoi:sleepWhenFree": {
+  "SpireJoi:PrepareDeck": {
+    "NAME": "聊天卡组准备(未实现)",
+    "DESCRIPTION": "在你的每个回合开始时，额外抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": "在你的每个回合开始时，额外抽 #b1 张牌。"
+  },
+  "SpireJoi:SleepWhenFree": {
     "NAME": "有空就睡觉(未实现)",
     "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。",
     "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。"
