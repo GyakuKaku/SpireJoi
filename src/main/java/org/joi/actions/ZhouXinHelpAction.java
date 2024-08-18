@@ -1,6 +1,7 @@
 package org.joi.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,6 +9,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
+import org.joi.effects.ZhouXinHelpEffect;
 
 public class ZhouXinHelpAction extends AbstractGameAction {
     private boolean freeToPlayOnce;
@@ -42,6 +44,7 @@ public class ZhouXinHelpAction extends AbstractGameAction {
             for (int i = 0; i < effect; i++) {
                 AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
                 addToBot(new DamageAction(target, new DamageInfo(this.p, this.damage, this.damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
+                addToTop(new VFXAction(new ZhouXinHelpEffect(target.hb.cX, target.hb.cY)));
             }
             if (!this.freeToPlayOnce) {
                 this.p.energy.use(EnergyPanel.totalCount);

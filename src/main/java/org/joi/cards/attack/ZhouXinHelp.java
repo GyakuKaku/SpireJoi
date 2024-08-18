@@ -20,11 +20,11 @@ public class ZhouXinHelp extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = JOI_YELLOW;
     private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public ZhouXinHelp() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 8;
     }
 
     @Override
@@ -37,7 +37,7 @@ public class ZhouXinHelp extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             // 将该卡牌的伤害提高3点。
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
         }
     }
 }
