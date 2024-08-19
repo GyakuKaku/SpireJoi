@@ -20,7 +20,7 @@
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
   "SpireJoi:ZhouXinHelp": {
-    "NAME": "轴芯的支援(未实现)",
+    "NAME": "轴芯的支援",
     "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。",
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
   },
