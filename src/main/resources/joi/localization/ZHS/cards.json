@@ -46,7 +46,12 @@
     "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
   },
   "SpireJoi:BottleCap": {
-    "NAME": "拧瓶盖练习(未实现)",
+    "NAME": "拧瓶盖练习",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
+  },
+  "SpireJoi:OrganizeDesk": {
+    "NAME": "桌面整理(未实现)",
     "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
   },
@@ -70,5 +75,10 @@
     "NAME": "有空就睡觉(未实现)",
     "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。",
     "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! 点 能量 和1层 睡意 。"
+  },
+  "SpireJoi:KKYXDT": {
+    "NAME": "困困夜行电台(未实现)",
+    "DESCRIPTION": "回合结束时敌人的 睡意 不再下降。",
+    "UPGRADE_DESCRIPTION": "回合结束时敌人的 睡意 不再下降。"
   }
 }
