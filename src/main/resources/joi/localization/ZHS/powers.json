@@ -26,5 +26,13 @@
       " 金币。 NL 本场战斗中还能获得 #b",
       " 金币。"
     ]
+  },
+  "SpireJoi:LoseBottleCapPower": {
+    "NAME": "拧瓶盖练习",
+    "DESCRIPTIONS": [
+      "在你的回合结束时，失去 #b",
+      " 点 #y力量 和 #b",
+      " 点 #y敏捷 。"
+    ]
   }
 }

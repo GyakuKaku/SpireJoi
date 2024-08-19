@@ -38,6 +38,6 @@ public class LoseBottleCapPower extends AbstractPower {
     
     @Override
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0];
+        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1] + this.amount + powerStrings.DESCRIPTIONS[2];
     }
 }
