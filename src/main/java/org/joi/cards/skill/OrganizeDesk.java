@@ -38,6 +38,7 @@ public class OrganizeDesk extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.exhaust = false;
             initializeDescription();
         }
     }

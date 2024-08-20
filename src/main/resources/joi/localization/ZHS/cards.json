@@ -51,9 +51,9 @@
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
   },
   "SpireJoi:OrganizeDesk": {
-    "NAME": "桌面整理(未实现)",
-    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
+    "NAME": "桌面整理",
+    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。"
   },
 
   "SpireJoi:Facade": {
