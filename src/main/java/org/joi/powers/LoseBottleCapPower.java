@@ -29,6 +29,7 @@ public class LoseBottleCapPower extends AbstractPower {
         this.updateDescription();
     }
 
+    @Override
     public void atEndOfTurn(boolean isPlayer) {
         this.flash();
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.amount), -this.amount));
