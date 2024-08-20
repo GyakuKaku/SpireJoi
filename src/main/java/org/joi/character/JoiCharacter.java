@@ -41,7 +41,7 @@ public class JoiCharacter extends CustomPlayer {
             "joi/img/UI/orb/layer3.png",
             "joi/img/UI/orb/layer2.png",
             "joi/img/UI/orb/layer1.png",
-            "joi/img/UI/orb/layer6.png",
+            "joi/img/UI/orb/layer0.png",
             "joi/img/UI/orb/layer5d.png",
             "joi/img/UI/orb/layer4d.png",
             "joi/img/UI/orb/layer3d.png",
