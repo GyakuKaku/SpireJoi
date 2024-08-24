@@ -16,6 +16,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Cry;
+import org.joi.cards.attack.StartLive;
 import org.joi.cards.attack.Strike;
 import org.joi.cards.skill.Defend;
 import org.joi.cards.skill.EndLive;
@@ -73,10 +74,10 @@ public class JoiCharacter extends CustomPlayer {
     // 初始卡组的ID，可直接写或引用变量
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
-        // 4张打击
-        for (int x = 0; x < 4; x++) {
-            retVal.add(Strike.ID);
-        }
+        retVal.add(Strike.ID);
+        retVal.add(Strike.ID);
+        retVal.add(StartLive.ID);
+        retVal.add(StartLive.ID);
         // 4张防御
         for (int x = 0; x < 4; x++) {
             retVal.add(Defend.ID);
