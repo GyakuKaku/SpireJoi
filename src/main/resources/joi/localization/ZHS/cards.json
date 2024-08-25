@@ -1,6 +1,11 @@
 {
+  "SpireJoi:StartLive": {
+    "NAME": "开播",
+    "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
+  },
   "SpireJoi:Strike": {
-    "NAME": "打击",
+    "NAME": "给你一拳",
     "DESCRIPTION": "造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
   },
@@ -8,11 +13,6 @@
     "NAME": "哭哭",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 虚弱 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 虚弱 。"
-  },
-  "SpireJoi:StartLive": {
-    "NAME": "开播",
-    "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
@@ -32,7 +32,7 @@
   "SpireJoi:HeadButt": {
     "NAME": "头槌(未实现)",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人和自己 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人和自己 !M! 层 睡意 。"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
   },
 
   "SpireJoi:Defend": {
@@ -56,7 +56,7 @@
     "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
   },
   "SpireJoi:BottleCap": {
-    "NAME": "拧瓶盖练习",
+    "NAME": "拧瓶盖练习(缺少卡图)",
     "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
   },
