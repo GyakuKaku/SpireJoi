@@ -16,7 +16,7 @@
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。 NL 消耗 。",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
   "SpireJoi:ZhouXinHelp": {
@@ -30,9 +30,14 @@
     "UPGRADE_DESCRIPTION": "每有一张手牌，造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。"
   },
   "SpireJoi:HeadButt": {
-    "NAME": "头槌(未实现)",
+    "NAME": "头槌(缺少卡图)",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人和自己 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
+  },
+  "SpireJoi:MUA": {
+    "NAME": "MUA(未实现)",
+    "DESCRIPTION": "给予敌人和自己 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予敌人和自己 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。"
   },
 
   "SpireJoi:Defend": {
@@ -47,8 +52,8 @@
   },
   "SpireJoi:Yawn": {
     "NAME": "哈欠",
-    "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意。"
+    "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意 。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人自身 睡意 层数的 睡意 。"
   },
   "SpireJoi:SlackOff": {
     "NAME": "播前小憩",
