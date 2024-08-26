@@ -25,7 +25,7 @@
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
   },
   "SpireJoi:Zatsudan": {
-    "NAME": "杂谈(缺少卡图)",
+    "NAME": "杂谈",
     "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
     "EXTENDED_DESCRIPTION": [
@@ -33,7 +33,7 @@
     ]
   },
   "SpireJoi:HeadButt": {
-    "NAME": "头槌(缺少卡图)",
+    "NAME": "头槌",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人和自己 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
   },
