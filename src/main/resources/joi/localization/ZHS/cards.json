@@ -39,8 +39,8 @@
   },
   "SpireJoi:MUA": {
     "NAME": "MUA(未实现)",
-    "DESCRIPTION": "给予敌人和自己 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予敌人和自己 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。"
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。"
   },
 
   "SpireJoi:Defend": {
