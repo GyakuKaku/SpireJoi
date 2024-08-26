@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.DrawPower;
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class PrePareDeck extends CustomCard {
+public class PrepareDeck extends CustomCard {
     public static final String ID = "SpireJoi:PrepareDeck";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
@@ -23,7 +23,7 @@ public class PrePareDeck extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public PrePareDeck() {
+    public PrepareDeck() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 1;
     }
