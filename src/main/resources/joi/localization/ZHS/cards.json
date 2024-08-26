@@ -44,7 +44,7 @@
   },
 
   "SpireJoi:Defend": {
-    "NAME": "防御",
+    "NAME": "防御(缺少卡图)",
     "DESCRIPTION": "获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
   },
@@ -85,7 +85,7 @@
     "UPGRADE_DESCRIPTION": " 固有 。 NL 你每打出一张直播相关卡牌，获得1金币(每层能力最多提供20金币)。"
   },
   "SpireJoi:PrepareDeck": {
-    "NAME": "聊天卡组准备(缺少卡图)",
+    "NAME": "聊天卡组准备",
     "DESCRIPTION": "在你的每个回合开始时，额外抽 1 张牌。",
     "UPGRADE_DESCRIPTION": "在你的每个回合开始时，额外抽 1 张牌。"
   },
