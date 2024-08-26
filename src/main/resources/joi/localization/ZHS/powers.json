@@ -34,5 +34,12 @@
       " 点 #y力量 和 #b",
       " 点 #y敏捷 。"
     ]
+  },
+  "SpireJoi:SleepWhenFreePower": {
+    "NAME": "有空就睡",
+    "DESCRIPTIONS": [
+      "如果你在回合中不打出任何攻击牌，在下一回合获得 #b",
+      " 点 #y能量 和 #b1 层 睡意 。"
+    ]
   }
 }
