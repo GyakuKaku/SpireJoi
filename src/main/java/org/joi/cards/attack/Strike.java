@@ -3,6 +3,7 @@ package org.joi.cards.attack;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -28,7 +29,7 @@ public class Strike extends CustomCard {
 
     public Strike() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 9;
         // 基础打击牌tag(潘多拉魔盒等卡牌使用)
         this.tags.add(CardTags.STRIKE);
         // 打击牌tag
@@ -37,17 +38,8 @@ public class Strike extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(
-                new DamageAction(
-                        m,
-                        new DamageInfo(
-                                p,
-                                damage,
-                                DamageInfo.DamageType.NORMAL
-                        ),
-                        AbstractGameAction.AttackEffect.BLUNT_LIGHT
-                )
-        );
+        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new DrawCardAction(p, 1));
     }
 
     @Override

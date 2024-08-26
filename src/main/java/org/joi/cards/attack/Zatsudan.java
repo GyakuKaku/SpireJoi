@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ApplySleepyAction;
@@ -29,7 +30,6 @@ public class Zatsudan extends CustomCard {
 
     public Zatsudan() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 2;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);
@@ -39,14 +39,23 @@ public class Zatsudan extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new SleepyDamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.applyPowers();
         this.addToBot(new ApplySleepyAction(m, p, new SleepyPower(m, this.magicNumber), this.magicNumber));
+    }
+
+    @Override
+    public void applyPowers() {
+        int count = (int) AbstractDungeon.player.hand.group.stream().filter(item -> item != this).count();
+        this.baseDamage = count * 2;
+        super.applyPowers();
+        this.rawDescription = CARD_STRINGS.DESCRIPTION + CARD_STRINGS.EXTENDED_DESCRIPTION[0];
+        this.initializeDescription();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
             initializeDescription();
         }
     }

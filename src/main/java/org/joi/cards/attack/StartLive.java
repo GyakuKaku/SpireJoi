@@ -38,28 +38,8 @@ public class StartLive extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(
-                new DamageAction(
-                        m,
-                        new SleepyDamageInfo(
-                                p,
-                                damage,
-                                DamageInfo.DamageType.NORMAL
-                        ),
-                        AbstractGameAction.AttackEffect.BLUNT_LIGHT
-                )
-        );
-        this.addToBot(
-                new ApplySleepyAction(
-                        m,
-                        p,
-                        new SleepyPower(
-                                m,
-                                this.magicNumber
-                        ),
-                        this.magicNumber
-                )
-        );
+        this.addToBot(new DamageAction( m, new SleepyDamageInfo( p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new ApplySleepyAction(m, p, new SleepyPower(m, this.magicNumber), this.magicNumber));
     }
 
     @Override

@@ -6,8 +6,8 @@
   },
   "SpireJoi:Strike": {
     "NAME": "给你一拳",
-    "DESCRIPTION": "造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌"
   },
   "SpireJoi:Cry": {
     "NAME": "哭哭",
@@ -25,9 +25,12 @@
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
   },
   "SpireJoi:Zatsudan": {
-    "NAME": "杂谈(未实现)",
-    "DESCRIPTION": "每有一张手牌，造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。"
+    "NAME": "杂谈(缺少卡图)",
+    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （造成 !D! 点伤害。）"
+    ]
   },
   "SpireJoi:HeadButt": {
     "NAME": "头槌(缺少卡图)",
