@@ -6,8 +6,8 @@
   },
   "SpireJoi:Strike": {
     "NAME": "给你一拳",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽1张牌"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。"
   },
   "SpireJoi:Cry": {
     "NAME": "哭哭",
@@ -16,8 +16,8 @@
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL  惊吓 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL  惊吓 。"
   },
   "SpireJoi:ZhouXinHelp": {
     "NAME": "轴芯的支援",
@@ -39,8 +39,8 @@
   },
   "SpireJoi:MUA": {
     "NAME": "MUA(未实现)",
-    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL 惊吓 消耗 。"
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL  惊吓 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合对所有敌人造成 !D! 点伤害。 NL  惊吓 消耗 。"
   },
 
   "SpireJoi:Defend": {
@@ -60,8 +60,8 @@
   },
   "SpireJoi:SlackOff": {
     "NAME": "播前小憩",
-    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
+    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL  消耗 。"
   },
   "SpireJoi:BottleCap": {
     "NAME": "拧瓶盖练习(缺少卡图)",
@@ -70,7 +70,7 @@
   },
   "SpireJoi:OrganizeDesk": {
     "NAME": "桌面整理",
-    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL 消耗 。",
+    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL  消耗 。",
     "UPGRADE_DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。"
   },
 
