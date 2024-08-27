@@ -26,8 +26,8 @@
   },
   "SpireJoi:Zatsudan": {
     "NAME": "杂谈",
-    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。）"
     ]
@@ -73,6 +73,11 @@
     "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL  消耗 。",
     "UPGRADE_DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。"
   },
+  "SpireJoi:KKYXDT": {
+    "NAME": "困困夜行电台(未实现)",
+    "DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 状态。"
+  },
 
   "SpireJoi:Facade": {
     "NAME": "硬撑",
@@ -91,11 +96,11 @@
   },
   "SpireJoi:SleepWhenFree": {
     "NAME": "有空就睡(未实现)",
-    "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 !M! [E] 和 1 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] 和 1 层 睡意 。"
+    "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。"
   },
-  "SpireJoi:KKYXDT": {
-    "NAME": "困困夜行电台(未实现)",
+  "SpireJoi:LiveRecord": {
+    "NAME": "录播(未实现)",
     "DESCRIPTION": "回合结束时敌人的 睡意 不再下降。",
     "UPGRADE_DESCRIPTION": "回合结束时敌人的 睡意 不再下降。"
   }

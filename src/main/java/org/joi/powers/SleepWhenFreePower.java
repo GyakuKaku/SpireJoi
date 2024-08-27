@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.joi.actions.ApplySleepyAction;
 
 public class SleepWhenFreePower extends AbstractPower {
     // 能力的ID
@@ -36,7 +37,10 @@ public class SleepWhenFreePower extends AbstractPower {
     public void atStartOfTurn() {
         if (this.gainEnergyNext && !this.firstTurn) {
             flash();
-            this.addToBot(new GainEnergyAction(this.amount));
+            this.addToBot(new GainEnergyAction(this.amount * 2));
+            if (this.owner != null && this.owner.isPlayer) {
+                this.addToBot(new ApplySleepyAction(this.owner, this.owner, new SleepyPower(this.owner, 1),1));
+            }
         }
         this.firstTurn = false;
         this.gainEnergyNext = true;
@@ -51,6 +55,6 @@ public class SleepWhenFreePower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+        this.description = powerStrings.DESCRIPTIONS[0] + (this.amount * 2) + powerStrings.DESCRIPTIONS[1];
     }
 }
