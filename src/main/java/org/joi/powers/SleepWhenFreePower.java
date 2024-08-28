@@ -19,7 +19,6 @@ public class SleepWhenFreePower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     private static final String IMG_PATH = "joi/img/icons/facade.png";
     private boolean gainEnergyNext = false;
-    private boolean firstTurn = false;
 
     public SleepWhenFreePower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -29,20 +28,18 @@ public class SleepWhenFreePower extends AbstractPower {
         this.type = PowerType.BUFF;
         this.amount = amount;
         this.gainEnergyNext = false;
-        this.firstTurn = false;
         this.updateDescription();
     }
 
     @Override
     public void atStartOfTurn() {
-        if (this.gainEnergyNext && !this.firstTurn) {
+        if (this.gainEnergyNext) {
             flash();
             this.addToBot(new GainEnergyAction(this.amount * 2));
             if (this.owner != null && this.owner.isPlayer) {
                 this.addToBot(new ApplySleepyAction(this.owner, this.owner, new SleepyPower(this.owner, 1),1));
             }
         }
-        this.firstTurn = false;
         this.gainEnergyNext = true;
     }
 
