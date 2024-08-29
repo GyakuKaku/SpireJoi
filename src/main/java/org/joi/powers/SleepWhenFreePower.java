@@ -27,7 +27,7 @@ public class SleepWhenFreePower extends AbstractPower {
         this.img = ImageMaster.loadImage(IMG_PATH);
         this.type = PowerType.BUFF;
         this.amount = amount;
-        this.gainEnergyNext = false;
+        this.gainEnergyNext = true;
         this.updateDescription();
     }
 
