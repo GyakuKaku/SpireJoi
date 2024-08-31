@@ -95,7 +95,7 @@
     "UPGRADE_DESCRIPTION": "在你的每个回合开始时，额外抽 1 张牌。"
   },
   "SpireJoi:SleepWhenFree": {
-    "NAME": "有空就睡(未实现)",
+    "NAME": "有空就睡(缺少卡图)",
     "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。",
     "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。"
   },

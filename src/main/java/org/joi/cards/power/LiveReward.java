@@ -39,6 +39,7 @@ public class LiveReward extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.isInnate = true;
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -37,7 +37,7 @@ public class SleepWhenFreePower extends AbstractPower {
             flash();
             this.addToBot(new GainEnergyAction(this.amount * 2));
             if (this.owner != null && this.owner.isPlayer) {
-                this.addToBot(new ApplySleepyAction(this.owner, this.owner, new SleepyPower(this.owner, 1),1));
+                this.addToBot(new ApplySleepyAction(this.owner, this.owner, new SleepyPower(this.owner, this.amount),this.amount));
             }
         }
         this.gainEnergyNext = true;

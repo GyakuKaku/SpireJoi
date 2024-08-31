@@ -48,6 +48,7 @@ public class HeadButt extends CustomCard {
             this.upgradeName();
             this.upgradeDamage(3);
             this.upgradeMagicNumber(1);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
