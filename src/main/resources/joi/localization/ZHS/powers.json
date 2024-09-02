@@ -9,8 +9,8 @@
   "SpireJoi:SleepyPower": {
     "NAME": "睡意",
     "DESCRIPTIONS": [
-      "#y睡意 每回合会减少 #b1 层。  NL  受到不附带 #y睡意 的攻击会额外受到 #b",
-      " 点伤害并结束 #y睡意 状态。  NL  拥有 #b5 层 #y睡意 的敌人会进入 #y困倦 状态。"
+      "#y睡意 每回合会减少 #b1 层。  NL  受到攻击会额外受到 #b",
+      " 点伤害。  NL  拥有 #b5 层 #y睡意 的敌人会进入 #y困倦 状态。"
     ]
   },
   "SpireJoi:SlumberPower": {
@@ -40,6 +40,12 @@
     "DESCRIPTIONS": [
       "如果你在回合中不打出任何攻击牌，在下一回合获得 #b",
       " 点 #y能量 和 #b1 层 #y睡意 。"
+    ]
+  },
+  "SpireJoi:LiveRecordPower": {
+    "NAME": "录播",
+    "DESCRIPTIONS": [
+      "回合结束时敌人的 #y睡意 不再下降。"
     ]
   }
 }

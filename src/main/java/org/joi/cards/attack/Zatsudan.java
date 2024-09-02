@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ApplySleepyAction;
-import org.joi.infos.SleepyDamageInfo;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
@@ -38,7 +37,7 @@ public class Zatsudan extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new SleepyDamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         this.applyPowers();
         this.addToBot(new ApplySleepyAction(m, p, new SleepyPower(m, this.magicNumber), this.magicNumber));
     }

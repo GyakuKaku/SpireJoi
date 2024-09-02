@@ -7,11 +7,12 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.joi.SpireJoi;
-import org.joi.infos.SleepyDamageInfo;
+import org.joi.infos.ScareDamageInfo;
 import org.joi.patches.CardTagEnum;
 
 public class SleepyPower extends AbstractPower {
@@ -38,6 +39,9 @@ public class SleepyPower extends AbstractPower {
     // 每回合减少一层
     @Override
     public void atEndOfRound() {
+        if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower("SpireJoi:LiveRecordPower") && this.owner != null && !this.owner.isPlayer) {
+            return;
+        }
         if (this.amount == 0) {
             addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         } else {
@@ -71,9 +75,9 @@ public class SleepyPower extends AbstractPower {
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
         if (card.hasTag(CardTagEnum.SLEEPY)) {
             SpireJoi.logger.info("计算催眠伤害");
-            // 不做特殊处理
+            // 增加伤害
+            damage = damage + this.amount;
         } else {
-//            SpireJoi.logger.info("计算普通伤害");
             // 增加伤害
             damage = damage + this.amount;
         }
@@ -83,13 +87,13 @@ public class SleepyPower extends AbstractPower {
     // 被攻击时
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
-        if (info instanceof SleepyDamageInfo) {
-            SpireJoi.logger.info("受到催眠伤害");
-            // 不做特殊处理
-        } else {
-            SpireJoi.logger.info("受到普通伤害");
+        if (info instanceof ScareDamageInfo) {
+            SpireJoi.logger.info("受到惊吓伤害");
             // 结束睡意状态
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        } else {
+            SpireJoi.logger.info("受到普通伤害");
+            // 不做特殊处理
         }
         return damageAmount;
     }
