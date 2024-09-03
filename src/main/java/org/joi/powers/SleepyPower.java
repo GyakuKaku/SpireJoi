@@ -13,7 +13,6 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import org.joi.SpireJoi;
 import org.joi.infos.ScareDamageInfo;
-import org.joi.patches.CardTagEnum;
 
 public class SleepyPower extends AbstractPower {
     // 能力的ID
@@ -67,20 +66,16 @@ public class SleepyPower extends AbstractPower {
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
+        if (damageType == DamageInfo.DamageType.NORMAL) {
+            // 增加伤害
+            damage = damage + this.amount;
+        }
         return damage;
     }
 
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
-        if (card.hasTag(CardTagEnum.SLEEPY)) {
-            SpireJoi.logger.info("计算催眠伤害");
-            // 增加伤害
-            damage = damage + this.amount;
-        } else {
-            // 增加伤害
-            damage = damage + this.amount;
-        }
         return this.atDamageReceive(damage, damageType);
     }
 
