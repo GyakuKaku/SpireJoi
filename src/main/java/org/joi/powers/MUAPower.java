@@ -43,6 +43,7 @@ public class MUAPower extends AbstractPower {
                 this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
                 // 造成伤害
                 this.addToBot(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.damage, false), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+                this.updateDescription();
             } else {
                 this.ready = true;
                 this.updateDescription();
@@ -52,6 +53,6 @@ public class MUAPower extends AbstractPower {
     
     @Override
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+        this.description = (this.ready ? powerStrings.DESCRIPTIONS[1] : powerStrings.DESCRIPTIONS[0]) + this.damage + powerStrings.DESCRIPTIONS[2];
     }
 }
