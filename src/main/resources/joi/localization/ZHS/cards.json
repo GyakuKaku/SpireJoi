@@ -37,11 +37,6 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
   },
-  "SpireJoi:MUA": {
-    "NAME": "MUA(未实现)",
-    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。"
-  },
 
   "SpireJoi:Defend": {
     "NAME": "防御(缺少卡图)",
@@ -72,6 +67,11 @@
     "NAME": "桌面整理",
     "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL  消耗 。",
     "UPGRADE_DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。"
+  },
+  "SpireJoi:MUA": {
+    "NAME": "MUA(未实现)",
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。"
   },
   "SpireJoi:KKYXDT": {
     "NAME": "困困夜行电台(未实现)",

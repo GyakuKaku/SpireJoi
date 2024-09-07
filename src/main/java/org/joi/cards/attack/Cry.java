@@ -44,18 +44,9 @@ public class Cry extends CustomCard {
                 )
         );
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            this.addToBot(
-                    new ApplyPowerAction(
-                            mo,
-                            p,
-                            new WeakPower(
-                                    mo,
-                                    this.magicNumber,
-                                    false
-                            ),
-                            this.magicNumber
-                    )
-            );
+            if (!mo.isDeadOrEscaped()) {
+                this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber));
+            }
         }
     }
 

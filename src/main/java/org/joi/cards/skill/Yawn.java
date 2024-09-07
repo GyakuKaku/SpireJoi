@@ -45,17 +45,9 @@ public class Yawn extends CustomCard {
         }
         if (sleepyPowerAmount > 0) {
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                this.addToBot(
-                        new ApplySleepyAction(
-                                mo,
-                                p,
-                                new SleepyPower(
-                                        mo,
-                                        sleepyPowerAmount
-                                ),
-                                sleepyPowerAmount
-                        )
-                );
+                if (!mo.isDeadOrEscaped()) {
+                    this.addToBot(new ApplySleepyAction(mo, p, new SleepyPower(mo, sleepyPowerAmount), sleepyPowerAmount));
+                }
             }
         }
     }
