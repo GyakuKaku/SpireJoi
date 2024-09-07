@@ -18,7 +18,7 @@ public class MUAPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
     private static final String NAME = powerStrings.NAME;
-    private static final String IMG_PATH = "joi/img/icons/lose_bottle_cap.png";
+    private static final String IMG_PATH = "joi/img/icons/mua.png";
     private static int MUAIdOffset = 0;
     private boolean ready;
     private int damage = 0;
