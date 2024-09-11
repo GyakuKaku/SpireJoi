@@ -24,7 +24,7 @@
     "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。",
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
   },
-  "SpireJoi:Zatsudan": {
+  "SpireJoi:ChillTalk": {
     "NAME": "杂谈",
     "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
@@ -36,6 +36,24 @@
     "NAME": "头槌",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
+  },
+  "SpireJoi:ASMR": {
+    "NAME": "奥数魔刃(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。"
+  },
+  "SpireJoi:LiveReplay": {
+    "NAME": "直播回放(未实现)",
+    "DESCRIPTION": "你在这个回合内每打出过一张直播相关卡牌，就造成一次 !D! 点伤害。",
+    "EXTENDED_DESCRIPTION": [
+      " NL （你本回合打出过",
+      " 张直播相关卡牌。）"
+    ]
+  },
+  "SpireJoi:SingLive": {
+    "NAME": "歌回(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。"
   },
 
   "SpireJoi:Defend": {
@@ -120,7 +138,7 @@
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和  !M! 层 睡意 。"
   },
   "SpireJoi:LiveRecord": {
-    "NAME": "录播(缺少卡图)",
+    "NAME": "直播间轮播(缺少卡图)",
     "DESCRIPTION": "回合结束时敌人的 睡意 不再下降。",
     "UPGRADE_DESCRIPTION": "回合结束时敌人的 睡意 不再下降。"
   }
