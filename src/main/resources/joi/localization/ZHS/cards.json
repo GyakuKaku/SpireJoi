@@ -50,7 +50,7 @@
       " 张直播相关卡牌。）"
     ]
   },
-  "SpireJoi:SingLive": {
+  "SpireJoi:SingingLive": {
     "NAME": "歌回(未实现)",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 。"
