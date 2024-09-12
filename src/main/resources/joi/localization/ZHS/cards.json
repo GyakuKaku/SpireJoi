@@ -55,6 +55,11 @@
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
+  "SpireJoi:YYGQ": {
+    "NAME": "阴阳怪气(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 虚弱 。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御(缺少卡图)",
