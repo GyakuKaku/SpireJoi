@@ -32,6 +32,7 @@ public class ASMR extends CustomCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);
+        this.tags.add(CardTagEnum.LIVE);
     }
 
     @Override
