@@ -14,11 +14,11 @@ import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-public class HeadButt extends CustomCard {
-    public static final String ID = "SpireJoi:HeadButt";
+public class ASMR extends CustomCard {
+    public static final String ID = "SpireJoi:ASMR";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/head_butt.png";
+    private static final String IMG_PATH = "joi/img/cards/asmr.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
@@ -26,10 +26,10 @@ public class HeadButt extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    public HeadButt() {
+    public ASMR() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 9;
-        this.baseMagicNumber = 2;
+        this.baseDamage = 8;
+        this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);
     }
@@ -38,15 +38,13 @@ public class HeadButt extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         this.addToBot(new ApplySleepyAction(m, p, new SleepyPower(m, this.magicNumber), this.magicNumber));
-        this.addToBot(new ApplySleepyAction(p, p, new SleepyPower(p, 1), 1));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
-            this.upgradeMagicNumber(1);
+            this.upgradeDamage(4);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

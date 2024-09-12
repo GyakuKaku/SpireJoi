@@ -15,7 +15,7 @@ public class SleepWhenFree extends CustomCard {
     public static final String ID = "SpireJoi:SleepWhenFree";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/prepare_deck.png";
+    private static final String IMG_PATH = "joi/img/cards/sleep_when_free.png";
     private static final int COST = 2;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.POWER;
