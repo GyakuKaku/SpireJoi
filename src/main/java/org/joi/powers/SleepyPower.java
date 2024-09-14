@@ -42,9 +42,9 @@ public class SleepyPower extends AbstractPower {
             return;
         }
         if (this.amount == 0) {
-            addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         } else {
-            addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
+            this.addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
         }
     }
 
