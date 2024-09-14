@@ -43,7 +43,7 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层 睡意 。"
   },
   "SpireJoi:LiveReplay": {
-    "NAME": "直播回放(未实现)",
+    "NAME": "直播回放(缺少卡图)",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 你在这个回合内每打出过一张直播相关卡牌，就给予敌人1层 睡意 。",
     "EXTENDED_DESCRIPTION": [
       " NL （你本回合打出过",
