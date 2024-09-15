@@ -51,7 +51,7 @@
     ]
   },
   "SpireJoi:SingingLive": {
-    "NAME": "歌回(未实现)",
+    "NAME": "歌回(缺少卡图)",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
