@@ -1,47 +1,44 @@
 package org.joi.cards.skill;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import org.joi.actions.ApplySleepyAction;
-import org.joi.patches.CardTagEnum;
-import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class MobileLive extends CustomCard {
-    public static final String ID = "SpireJoi:MobileLive";
+public class SelfAttack extends CustomCard {
+    public static final String ID = "SpireJoi:SelfAttack";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/mobile_live.png";
-    private static final int COST = 1;
+    private static final String IMG_PATH = "joi/img/cards/self_attack.png";
+    private static final int COST = 0;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = JOI_YELLOW;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
-    public MobileLive() {
+    public SelfAttack() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 7;
-        this.baseMagicNumber = 1;
+        this.baseBlock = 5;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(CardTagEnum.LIVE);
-        this.tags.add(CardTagEnum.SLEEPY);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new ExhaustAction(1, false));
+        this.addToBot(new LoseHPAction(p, p, this.magicNumber));
         this.addToBot(new GainBlockAction(p, p, this.block));
-        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-            if (!mo.isDeadOrEscaped()) {
-                this.addToBot(new ApplySleepyAction(mo, p, new SleepyPower(mo, magicNumber), magicNumber));
-            }
+        if (this.upgraded) {
+            this.addToBot(new DrawCardAction(p, 1));
         }
     }
 
@@ -49,7 +46,7 @@ public class MobileLive extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(4);
+            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

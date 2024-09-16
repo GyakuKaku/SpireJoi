@@ -96,20 +96,20 @@
     "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。",
     "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。"
   },
-  "SpireJoi:KKYXDT": {
-    "NAME": "困困夜行电台(未实现)",
-    "DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 状态。"
-  },
   "SpireJoi:MobileLive": {
     "NAME": "手机电台(缺少卡图)",
     "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人 !M! 层 睡意 。"
   },
   "SpireJoi:SelfAttack": {
-    "NAME": "自我攻击(未实现)",
+    "NAME": "自我攻击(缺少卡图)",
     "DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 。"
+    "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 ,抽1张牌。"
+  },
+  "SpireJoi:KKYXDT": {
+    "NAME": "困困夜行电台(未实现)",
+    "DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "本回合和下回合结束时，给予全体敌人 !M! 层 睡意 。 NL 在3回合结束后，给予全体敌人 困倦 状态。"
   },
 
   "SpireJoi:Facade": {
