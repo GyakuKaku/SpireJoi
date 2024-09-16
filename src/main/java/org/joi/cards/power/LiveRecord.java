@@ -20,7 +20,7 @@ public class LiveRecord extends CustomCard {
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.POWER;
     private static final CardColor COLOR = JOI_YELLOW;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public LiveRecord() {
