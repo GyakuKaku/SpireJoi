@@ -43,8 +43,8 @@ public class ZhouXinHelpAction extends AbstractGameAction {
         if (effect > 0) {
             for (int i = 0; i < effect; i++) {
                 AbstractMonster target = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-                addToBot(new DamageAction(target, new DamageInfo(this.p, this.damage, this.damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
-                addToBot(new VFXAction(new ZhouXinHelpEffect(target.hb.cX, target.hb.cY)));
+                this.addToBot(new DamageAction(target, new DamageInfo(this.p, this.damage, this.damageTypeForTurn), AttackEffect.BLUNT_LIGHT));
+                this.addToBot(new VFXAction(new ZhouXinHelpEffect(target.hb.cX, target.hb.cY)));
             }
             if (!this.freeToPlayOnce) {
                 this.p.energy.use(EnergyPanel.totalCount);
