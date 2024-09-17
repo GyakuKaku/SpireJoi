@@ -16,11 +16,10 @@ public class ZhouXinHelpEffect extends AbstractGameEffect {
         if (this.img == null) {
             this.img = ImageMaster.loadImage(IMG_PATH);
         }
-
-        this.x = x - (float)(this.img.getWidth() * 2) / 2.0F;
-        this.y = y - (float)(this.img.getHeight() * 2) / 2.0F;
+        this.x = x - (float)(this.img.getWidth());
+        this.y = y - (float)(this.img.getHeight());
         this.color = Color.WHITE.cpy();
-        this.duration = 0.1F;
+        this.duration = 0.3F;
     }
 
     public void render(SpriteBatch sb) {
