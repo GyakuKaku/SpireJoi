@@ -15,6 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
 import org.joi.relics.Cat;
+import org.joi.relics.ChickenNuggets;
 import org.joi.relics.ZhouXin;
 
 import java.nio.charset.StandardCharsets;
@@ -52,6 +53,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     public void receiveEditRelics() {
         BaseMod.addRelicToCustomPool(new ZhouXin(), JOI_YELLOW);
         BaseMod.addRelicToCustomPool(new Cat(), JOI_YELLOW);
+        BaseMod.addRelicToCustomPool(new ChickenNuggets(), JOI_YELLOW);
     }
 
     @Override

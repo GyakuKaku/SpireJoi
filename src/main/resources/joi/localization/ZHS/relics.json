@@ -12,7 +12,14 @@
     "NAME": "大猫",
     "FLAVOR": "路过的人都打一拳!",
     "DESCRIPTIONS": [
-      "随机回合对场上的随机目标造成 #5 点伤害。"
+      "随机回合对场上的随机目标造成 #b5 点伤害。"
+    ]
+  },
+  "SpireJoi:ChickenNuggets": {
+    "NAME": "原味鸡",
+    "FLAVOR": "关于吃鸡块为什么会受伤->BV1yD4y1i7kd",
+    "DESCRIPTIONS": [
+      "在每回合开始时获得 [E] 。将一张 #y伤口 放入你的牌组。"
     ]
   }
 }
