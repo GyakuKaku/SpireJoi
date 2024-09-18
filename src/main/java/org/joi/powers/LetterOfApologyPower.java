@@ -13,7 +13,7 @@ public class LetterOfApologyPower extends AbstractPower {
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
     private static final String NAME = powerStrings.NAME;
-    private static final String IMG_PATH = "joi/img/icons/slumber.png";
+    private static final String IMG_PATH = "joi/img/icons/letter_of_apology.png";
 
     public LetterOfApologyPower(AbstractCreature owner) {
         this.name = NAME;
