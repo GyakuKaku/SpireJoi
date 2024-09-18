@@ -32,9 +32,9 @@ public class BottleCap extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new LoseBottleCapPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new LoseBottleCapPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

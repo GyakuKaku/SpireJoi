@@ -107,7 +107,7 @@
     "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 ,抽1张牌。"
   },
   "SpireJoi:KKYXDT": {
-    "NAME": "困困夜行电台(未实现)",
+    "NAME": "困困夜行电台(缺少卡图)",
     "DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL  消耗 。",
     "UPGRADE_DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL  消耗 。"
   },
@@ -135,12 +135,12 @@
   "SpireJoi:LetterOfApology": {
     "NAME": "迟到道歉信(未实现)",
     "DESCRIPTION": "不再受到 睡意 的负面影响，不会陷入 困倦 状态。",
-    "UPGRADE_DESCRIPTION": "不再受到 睡意 的负面影响，不会陷入 困倦 状态。"
+    "UPGRADE_DESCRIPTION": "不再受到 睡意 的负面影响，不会陷入 困倦 状态。 NL 将一张 *健身环直播 加入手牌。"
   },
   "SpireJoi:RingFitAdventure": {
     "NAME": "健身环直播(未实现)",
-    "DESCRIPTION": "获得 !M! 点 力量 和  !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和  !M! 层 睡意 。"
+    "DESCRIPTION": "获得 !M! 点 力量 和 1 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 1 层 睡意 。"
   },
   "SpireJoi:LiveRecord": {
     "NAME": "直播间轮播(缺少卡图)",
