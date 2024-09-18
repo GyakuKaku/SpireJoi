@@ -53,7 +53,7 @@ public class SleepyPower extends AbstractPower {
         this.fontScale = 8.0F;
 
         this.amount += stackAmount;
-        if (this.amount >= 5) {
+        if (this.amount >= 5 && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             // 叠到五层取消并进入困倦状态
             SpireJoi.logger.info("睡意叠加到五层");
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
@@ -66,7 +66,7 @@ public class SleepyPower extends AbstractPower {
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        if (damageType == DamageInfo.DamageType.NORMAL) {
+        if (damageType == DamageInfo.DamageType.NORMAL && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             // 增加伤害
             damage = damage + this.amount;
         }

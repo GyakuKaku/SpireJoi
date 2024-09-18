@@ -34,7 +34,7 @@ public class SlumberPower extends AbstractPower {
     // 减少伤害
     @Override
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (type == DamageInfo.DamageType.NORMAL) {
+        if (type == DamageInfo.DamageType.NORMAL && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             return damage * 0.75F;
         }
         return damage;
@@ -49,7 +49,7 @@ public class SlumberPower extends AbstractPower {
     // 计算被攻击伤害
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        if (damageType == DamageInfo.DamageType.NORMAL) {
+        if (damageType == DamageInfo.DamageType.NORMAL && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             return damage * 2;
         }
         return damage;
