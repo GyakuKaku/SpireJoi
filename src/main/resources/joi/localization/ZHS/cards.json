@@ -60,10 +60,10 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是防御,则给予 !M! 层 易伤 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是防御,则给予 !M! 层 易伤 。"
   },
-  "SpireJoi:LiveAgain": {
-    "NAME": "嘲笑",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合中打出过直播相关卡牌，这张牌在本回合耗能变为0",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗中打出的上一张牌是攻击牌，获得 [W] 。"
+  "SpireJoi:ResumedLive": {
+    "NAME": "回马枪(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [W] 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，，获得 [W] 。"
   },
 
   "SpireJoi:Defend": {
