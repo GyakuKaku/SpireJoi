@@ -60,6 +60,11 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是防御,则给予 !M! 层 易伤 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是防御,则给予 !M! 层 易伤 。"
   },
+  "SpireJoi:LiveAgain": {
+    "NAME": "嘲笑",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合中打出过直播相关卡牌，这张牌在本回合耗能变为0",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本场战斗中打出的上一张牌是攻击牌，获得 [W] 。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御(缺少卡图)",
@@ -133,7 +138,7 @@
     "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。"
   },
   "SpireJoi:LetterOfApology": {
-    "NAME": "迟到道歉信(未实现)",
+    "NAME": "迟到道歉信",
     "DESCRIPTION": "不再受到 睡意 的负面影响，不会陷入 困倦 状态。",
     "UPGRADE_DESCRIPTION": "不再受到 睡意 的负面影响，不会陷入 困倦 状态。 NL 将一张 *健身环直播 加入手牌。"
   },
