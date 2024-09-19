@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import org.joi.actions.ApplySleepyAction;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -28,6 +29,8 @@ public class RingFitAdventure extends CustomCard {
     public RingFitAdventure() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 2;
+        this.tags.add(CardTagEnum.SLEEPY);
+        this.tags.add(CardTagEnum.LIVE);
     }
 
     @Override

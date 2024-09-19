@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.KKYXDTPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -25,6 +26,8 @@ public class KKYXDT extends CustomCard {
     public KKYXDT() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.tags.add(CardTagEnum.SLEEPY);
+        this.tags.add(CardTagEnum.LIVE);
     }
 
     @Override
