@@ -65,6 +65,11 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [E] 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [E] 。"
   },
+  "SpireJoi:JumpScare": {
+    "NAME": "惊吓(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御(缺少卡图)",
@@ -161,5 +166,10 @@
     "NAME": "后日谈",
     "DESCRIPTION": "每打出一张直播相关卡牌时，抽 !M! 张牌。",
     "UPGRADE_DESCRIPTION": "每打出一张直播相关卡牌时，抽 !M! 张牌。"
+  },
+  "SpireJoi:RechargeSnacks": {
+    "NAME": "零食补充(未实现)",
+    "DESCRIPTION": "每当有一张牌被 消耗 时， 抽1张牌。",
+    "UPGRADE_DESCRIPTION": "每当有一张牌被 消耗 时， 抽1张牌。"
   }
 }
