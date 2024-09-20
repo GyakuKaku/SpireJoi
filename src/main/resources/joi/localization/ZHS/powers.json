@@ -68,5 +68,12 @@
     "DESCRIPTIONS": [
       "不再受到 #y睡意 的负面影响，不会陷入 #y困倦 状态。"
     ]
+  },
+  "SpireJoi:AfterTalkPower": {
+    "NAME": "后日谈",
+    "DESCRIPTIONS": [
+      "每打出一张直播相关卡牌时，抽 #b",
+      " 张牌。"
+    ]
   }
 }

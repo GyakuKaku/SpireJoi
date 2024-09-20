@@ -16,8 +16,8 @@
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL  惊醒 。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL  惊醒 。"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:ZhouXinHelp": {
     "NAME": "轴芯的支援",
@@ -26,8 +26,8 @@
   },
   "SpireJoi:ChillTalk": {
     "NAME": "杂谈",
-    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL  给予敌人 !M! 层 睡意 。",
+    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。）"
     ]
@@ -61,9 +61,9 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果目标敌人的意图是防御,则给予 !M! 层 易伤 。"
   },
   "SpireJoi:ResumedLive": {
-    "NAME": "回马枪(未实现)",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [W] 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，，获得 [W] 。"
+    "NAME": "回马枪",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 如果本回合打出过直播相关卡牌，获得 [E] 。"
   },
 
   "SpireJoi:Defend": {
@@ -83,8 +83,8 @@
   },
   "SpireJoi:SlackOff": {
     "NAME": "播前小憩",
-    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL  消耗 。"
+    "DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
   },
   "SpireJoi:BottleCap": {
     "NAME": "拧瓶盖练习(缺少卡图)",
@@ -93,13 +93,13 @@
   },
   "SpireJoi:OrganizeDesk": {
     "NAME": "桌面整理",
-    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL  消耗 。",
+    "DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "丢弃任意张牌，然后抽相同数量的牌。"
   },
   "SpireJoi:MUA": {
     "NAME": "MUA(缺少卡图)",
-    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL  消耗 。"
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
   },
   "SpireJoi:MobileLive": {
     "NAME": "手机电台(缺少卡图)",
@@ -113,8 +113,8 @@
   },
   "SpireJoi:KKYXDT": {
     "NAME": "困困夜行电台(缺少卡图)",
-    "DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL  消耗 。",
-    "UPGRADE_DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL  消耗 。"
+    "DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL 消耗 。"
   },
 
   "SpireJoi:Facade": {
@@ -151,5 +151,10 @@
     "NAME": "直播间轮播(缺少卡图)",
     "DESCRIPTION": "回合结束时敌人的 睡意 不再下降。",
     "UPGRADE_DESCRIPTION": "回合结束时敌人的 睡意 不再下降。"
+  },
+  "SpireJoi:AfterTalk": {
+    "NAME": "后日谈",
+    "DESCRIPTION": "每打出一张直播相关卡牌时，抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "每打出一张直播相关卡牌时，抽 !M! 张牌。"
   }
 }
