@@ -116,6 +116,11 @@
     "DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "在打出卡牌和下回合开始时，给予全体敌人 !M! 层 睡意 。 NL 在再下回合开始时，给予全体敌人 困倦 状态。 NL 消耗 。"
   },
+  "SpireJoi:PotatoChips": {
+    "NAME": "薯片(未实现)",
+    "DESCRIPTION": "获得 [E] 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 消耗 。"
+  },
 
   "SpireJoi:Facade": {
     "NAME": "硬撑",
