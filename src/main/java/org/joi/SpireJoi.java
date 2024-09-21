@@ -2,6 +2,7 @@ package org.joi;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.abstracts.CustomRelic;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -11,12 +12,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
-import org.joi.relics.Cat;
-import org.joi.relics.ChickenNuggets;
-import org.joi.relics.ZhouXin;
 
 import java.nio.charset.StandardCharsets;
 
@@ -51,14 +50,19 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receiveEditRelics() {
-        BaseMod.addRelicToCustomPool(new ZhouXin(), JOI_YELLOW);
-        BaseMod.addRelicToCustomPool(new Cat(), JOI_YELLOW);
-        BaseMod.addRelicToCustomPool(new ChickenNuggets(), JOI_YELLOW);
+        new AutoAdd("SpireJoi").setDefaultSeen(true)
+                .any(CustomRelic.class, (info, relic) -> {
+                    BaseMod.addRelicToCustomPool(relic, JOI_YELLOW);
+                    if (info.seen) {
+                        UnlockTracker.markRelicAsSeen(relic.relicId);
+                    }
+                });
     }
 
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("joiSelected", "joi/audio/joi_selected.mp3");
+        BaseMod.addAudio("MUA", "joi/audio/mua.mp3");
     }
 
     @Override
