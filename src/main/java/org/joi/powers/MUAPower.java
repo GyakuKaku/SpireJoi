@@ -37,10 +37,10 @@ public class MUAPower extends AbstractPower {
     }
 
     @Override
-    public void atEndOfTurn(boolean isPlayer) {
+    public void atEndOfRound() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             if (this.ready) {
-                CardCrawlGame.sound.play("muaVoice", 1.5F);
+                CardCrawlGame.sound.playA("muaVoice", 0);
                 this.addToBot(new MUAPowerAttackAction(this.owner, this.owner, this.ID));
                 // 造成伤害
                 this.addToBot(new DamageAllEnemiesAction(this.owner, DamageInfo.createDamageMatrix(this.damage, false), DamageInfo.DamageType.NORMAL, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
