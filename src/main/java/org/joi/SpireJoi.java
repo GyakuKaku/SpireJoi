@@ -62,7 +62,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     @Override
     public void receiveAddAudio() {
         BaseMod.addAudio("joiSelected", "joi/audio/joi_selected.mp3");
-        BaseMod.addAudio("MUA", "joi/audio/mua.mp3");
+        BaseMod.addAudio("muaVoice", "joi/audio/mua.mp3");
     }
 
     @Override
