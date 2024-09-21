@@ -23,19 +23,21 @@ public class KKYXDTPower extends AbstractPower {
     private static final String IMG_PATH_3 = "joi/img/icons/kkyxdt_3.png";
     private static int KKYXDTIdOffset = 0;
     private int count = 0;
+    private int magicNumber = 0;
 
-    public KKYXDTPower(AbstractCreature owner) {
+    public KKYXDTPower(AbstractCreature owner, int magicNumber) {
         this.name = NAME;
         this.ID = POWER_ID + KKYXDTIdOffset;
         KKYXDTIdOffset++;
         this.owner = owner;
+        this.magicNumber = magicNumber;
         this.img = ImageMaster.loadImage(IMG_PATH_1);
         this.type = PowerType.BUFF;
         this.amount = -1;
         this.count = 1;
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                this.addToBot(new ApplySleepyAction(mo, this.owner, new SleepyPower(mo, 1), 1));
+                this.addToBot(new ApplySleepyAction(mo, this.owner, new SleepyPower(mo, this.magicNumber), this.magicNumber));
             }
         }
         this.updateDescription();
@@ -47,7 +49,7 @@ public class KKYXDTPower extends AbstractPower {
             this.img = ImageMaster.loadImage(IMG_PATH_2);
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                    this.addToBot(new ApplySleepyAction(mo, this.owner, new SleepyPower(mo, 1), 1));
+                    this.addToBot(new ApplySleepyAction(mo, this.owner, new SleepyPower(mo, this.magicNumber), this.magicNumber));
                 }
             }
             this.count = 2;

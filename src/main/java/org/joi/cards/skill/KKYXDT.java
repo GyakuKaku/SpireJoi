@@ -26,13 +26,15 @@ public class KKYXDT extends CustomCard {
     public KKYXDT() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
+        this.baseMagicNumber = 1;
+        this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);
         this.tags.add(CardTagEnum.LIVE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new KKYXDTPower(p)));
+        this.addToBot(new ApplyPowerAction(p, p, new KKYXDTPower(p, this.magicNumber)));
     }
 
     @Override
