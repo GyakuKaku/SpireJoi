@@ -117,12 +117,12 @@
     "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 ,抽1张牌。"
   },
   "SpireJoi:KKYXDT": {
-    "NAME": "困困夜行电台(缺少卡图)",
+    "NAME": "困困夜行电台",
     "DESCRIPTION": "打出时和下回合给予全体敌人 !M! 层 睡意 。 NL 再下回合给予全体敌人 困倦 状态。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "打出时和下回合给予全体敌人 !M! 层 睡意 。 NL 再下回合给予全体敌人 困倦 状态。 NL 消耗 。"
   },
   "SpireJoi:PotatoChips": {
-    "NAME": "薯片(未实现)",
+    "NAME": "薯片",
     "DESCRIPTION": "获得 [E] 。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 消耗 。"
   },
