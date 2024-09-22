@@ -62,7 +62,7 @@ public class KKYXDTPower extends AbstractPower {
                     this.addToBot(new ApplyPowerAction(mo, mo, new SlumberPower(this.owner)));
                 }
             }
-            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));
             this.updateDescription();
         }
     }
