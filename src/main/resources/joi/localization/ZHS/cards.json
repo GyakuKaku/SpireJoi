@@ -127,7 +127,7 @@
     "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 消耗 。"
   },
   "SpireJoi:RolePlay": {
-    "NAME": "角色扮演(未实现)",
+    "NAME": "角色扮演",
     "DESCRIPTION": "从3张其他角色的技能牌中选择1张加入你的手牌。 这张牌在本回合耗能变为0。 消耗 。",
     "UPGRADE_DESCRIPTION": "从3张其他角色的技能牌中选择1张加入你的手牌。 这张牌在本回合耗能变为0。 消耗 。"
   },
