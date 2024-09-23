@@ -148,8 +148,18 @@
   },
   "SpireJoi:GuaranteedWinning": {
     "NAME": "必中轮盘(未实现)",
-    "DESCRIPTION": "",
+    "DESCRIPTION": "--",
     "UPGRADE_DESCRIPTION": "--"
+  },
+  "SpireJoi:Repo": {
+    "NAME": "Repo(未实现)",
+    "DESCRIPTION": "将你本回合打出的上一张牌再打出 !M! 次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "将你本回合打出的上一张牌再打出 !M! 次。 NL 消耗 。"
+  },
+  "SpireJoi:Hidden": {
+    "NAME": "隐身(未实现)",
+    "DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。"
   },
 
   "SpireJoi:Facade": {
