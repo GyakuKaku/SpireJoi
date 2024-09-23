@@ -146,6 +146,11 @@
     "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每当这张牌被 保留 时，使用时额外提供 !M! 点 格挡。",
     "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每当这张牌被 保留 时，使用时额外提供 !M! 点 格挡。"
   },
+  "SpireJoi:GuaranteedWinning": {
+    "NAME": "必中轮盘(未实现)",
+    "DESCRIPTION": "--",
+    "UPGRADE_DESCRIPTION": "--"
+  },
 
   "SpireJoi:Facade": {
     "NAME": "硬撑",
