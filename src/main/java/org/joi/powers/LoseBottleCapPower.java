@@ -33,7 +33,7 @@ public class LoseBottleCapPower extends AbstractPower {
     public void atEndOfTurn(boolean isPlayer) {
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new StrengthPower(this.owner, -this.amount), -this.amount));
         this.addToBot(new ApplyPowerAction(this.owner, this.owner, new DexterityPower(this.owner, -this.amount), -this.amount));
-        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "SpireJoi:LoseBottleCapPower"));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, LoseBottleCapPower.POWER_ID));
     }
     
     @Override

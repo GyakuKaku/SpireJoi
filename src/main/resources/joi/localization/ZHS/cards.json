@@ -132,9 +132,9 @@
     "UPGRADE_DESCRIPTION": "从3张其他角色的技能牌中选择1张加入你的手牌。 这张牌在本回合耗能变为0。 消耗 。"
   },
   "SpireJoi:Dancing": {
-    "NAME": "舞蹈练习(未实现)",
-    "DESCRIPTION": "获得 !B! 点 格挡 ，本回合不能打出直播相关卡牌。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，本回合不能打出直播相关卡牌。"
+    "NAME": "舞蹈练习",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，本回合不能再打出直播相关卡牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，本回合不能再打出直播相关卡牌。"
   },
   "SpireJoi:MemberGift": {
     "NAME": "舰长礼物准备(未实现)",
@@ -169,8 +169,8 @@
   },
   "SpireJoi:RingFitAdventure": {
     "NAME": "健身环直播",
-    "DESCRIPTION": "获得 !M! 点 力量 和 1 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 1 层 睡意 。"
+    "DESCRIPTION": "获得 1 点 力量 !M! 点 敏捷 和 1 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "获得 1 点 力量 !M! 点 敏捷 和 1 层 睡意 。"
   },
   "SpireJoi:LiveRecord": {
     "NAME": "直播间轮播(缺少卡图)",
