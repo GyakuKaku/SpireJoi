@@ -142,14 +142,14 @@
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，本回合不能再打出直播相关卡牌。"
   },
   "SpireJoi:Hidden": {
-    "NAME": "隐身(未实现)",
+    "NAME": "隐身",
     "DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。"
   },
   "SpireJoi:MemberGift": {
-    "NAME": "舰长礼物准备(未实现)",
-    "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每当这张牌被 保留 时，使用时额外提供 !M! 点 格挡。",
-    "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每当这张牌被 保留 时，使用时额外提供 !M! 点 格挡。"
+    "NAME": "舰长礼物准备(缺少卡图)",
+    "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，使用时额外提供 !M! 点 格挡。",
+    "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，使用时额外提供 !M! 点 格挡。"
   },
   "SpireJoi:GuaranteedWinning": {
     "NAME": "必中轮盘(未实现)",
