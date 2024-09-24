@@ -70,6 +70,14 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。"
   },
+  "SpireJoi:SleepTalking": {
+    "NAME": "梦话",
+    "DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出。"
+    ]
+  },
   "SpireJoi:ZhouXinGo": {
     "NAME": "投掷(未实现)",
     "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。",
@@ -152,7 +160,7 @@
     "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，使用时额外提供 !M! 点 格挡。"
   },
   "SpireJoi:GoodNight": {
-    "NAME": "晚安(未实现)",
+    "NAME": "晚安",
     "DESCRIPTION": "给予全体敌人 !M! 层 睡意 。 NL 本回合不能再打出直播相关卡牌。",
     "UPGRADE_DESCRIPTION": "给予全体敌人 !M! 层 睡意 。 NL 本回合不能再打出直播相关卡牌。"
   },
@@ -160,6 +168,11 @@
     "NAME": "Repo(未实现)",
     "DESCRIPTION": "在这个回合，你打出的下一张直播牌打出 !M! 次。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "在这个回合，你打出的下一张直播牌打出 !M! 次。 NL 消耗 。"
+  },
+  "SpireJoi:ZhouXinYummy": {
+    "NAME": "加餐(未实现)",
+    "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 回复 !M! 点生命，轴芯变为不可用状态。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 回复 !M! 点生命，轴芯变为不可用状态。 NL 消耗 。"
   },
 
   "SpireJoi:Facade": {

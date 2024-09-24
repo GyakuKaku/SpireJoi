@@ -1,7 +1,7 @@
 package org.joi.relics;
 
 import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.cards.status.Wound;
+import com.megacrit.cardcrawl.cards.curses.Injury;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
@@ -24,9 +24,9 @@ public class ChickenNuggets extends CustomRelic {
 
     @Override
     public void onEquip() {
-        Wound wound = new Wound();
-        UnlockTracker.markCardAsSeen(wound.cardID);
-        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(wound, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
+        Injury injury = new Injury();
+        UnlockTracker.markCardAsSeen(injury.cardID);
+        AbstractDungeon.effectList.add(new ShowCardAndObtainEffect(injury, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F));
         AbstractDungeon.player.energy.energyMaster++;
     }
 
