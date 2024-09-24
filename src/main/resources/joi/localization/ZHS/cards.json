@@ -136,8 +136,8 @@
   },
   "SpireJoi:PotatoChips": {
     "NAME": "薯片",
-    "DESCRIPTION": "获得 [E] 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 NL 消耗 。"
+    "DESCRIPTION": "获得 [E] 。 消耗 。",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] 。 消耗 。"
   },
   "SpireJoi:RolePlay": {
     "NAME": "角色扮演",

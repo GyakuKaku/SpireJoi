@@ -12,7 +12,7 @@ import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
 public class AfterTalk extends CustomCard {
-    public static final String ID = "SpireJoi:Facade";
+    public static final String ID = "SpireJoi:AfterTalk";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
     private static final String IMG_PATH = "joi/img/cards/after_talk.png";
