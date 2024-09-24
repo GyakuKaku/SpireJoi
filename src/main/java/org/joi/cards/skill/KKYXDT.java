@@ -21,7 +21,7 @@ public class KKYXDT extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final CardColor COLOR = JOI_YELLOW;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public KKYXDT() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
