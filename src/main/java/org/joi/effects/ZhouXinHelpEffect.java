@@ -22,11 +22,13 @@ public class ZhouXinHelpEffect extends AbstractGameEffect {
         this.duration = 0.3F;
     }
 
+    @Override
     public void render(SpriteBatch sb) {
         sb.setColor(this.color);
         sb.draw(this.img, this.x, this.y, (this.img.getWidth() * 2), (this.img.getHeight() * 2));
     }
 
+    @Override
     public void dispose() {
     }
 }

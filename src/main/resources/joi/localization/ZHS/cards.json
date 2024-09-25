@@ -71,7 +71,7 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:ZhouXinGo": {
-    "NAME": "投掷(未实现)",
+    "NAME": "投掷",
     "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。"
   },
@@ -166,8 +166,8 @@
   },
   "SpireJoi:Repo": {
     "NAME": "Repo(未实现)",
-    "DESCRIPTION": "在这个回合，你打出的下一张直播牌打出 !M! 次。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "在这个回合，你打出的下一张直播牌打出 !M! 次。 NL 消耗 。"
+    "DESCRIPTION": "在这个回合，你打出的下一张攻击牌打出 !M! 次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "在这个回合，你打出的下一张攻击牌打出 !M! 次。 NL 消耗 。"
   },
   "SpireJoi:ZhouXinYummy": {
     "NAME": "加餐(未实现)",

@@ -37,7 +37,7 @@ public class ZhouXin extends CustomRelic {
         ) {
             this.flash();
             damageAmount = 0;
-            this.invalidZhouXin();
+            this.invalidZhouXin(true);
         }
         return damageAmount;
     }
@@ -53,9 +53,11 @@ public class ZhouXin extends CustomRelic {
     }
 
     // 特殊无效处理
-    private void invalidZhouXin() {
+    public void invalidZhouXin(boolean showImg) {
         this.img = ImageMaster.loadImage(IMG_PATH_C);
-        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        if (showImg) {
+            this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        }
         this.usedUp = true;
         this.description = Relic_STRINGS.DESCRIPTIONS[2];
         this.tips.clear();

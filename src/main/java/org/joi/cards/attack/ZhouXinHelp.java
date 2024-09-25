@@ -36,8 +36,8 @@ public class ZhouXinHelp extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            // 将该卡牌的伤害提高3点。
             this.upgradeDamage(2);
+            initializeDescription();
         }
     }
 }
