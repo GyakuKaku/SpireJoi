@@ -22,7 +22,7 @@ public class Cry extends CustomCard {
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = JOI_YELLOW;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
     public Cry() {
@@ -35,14 +35,7 @@ public class Cry extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(
-                new DamageAllEnemiesAction(
-                        p,
-                        this.multiDamage,
-                        this.damageTypeForTurn,
-                        AbstractGameAction.AttackEffect.BLUNT_LIGHT
-                )
-        );
+        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
                 this.addToBot(new ApplyPowerAction(mo, p, new WeakPower(mo, this.magicNumber, false), this.magicNumber));

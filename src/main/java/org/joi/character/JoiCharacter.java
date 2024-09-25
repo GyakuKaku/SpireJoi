@@ -17,7 +17,7 @@ import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Cry;
 import org.joi.cards.attack.StartLive;
-import org.joi.cards.attack.Strike;
+import org.joi.cards.attack.OnePunch;
 import org.joi.cards.skill.Defend;
 import org.joi.cards.skill.EndLive;
 import org.joi.contents.ColorContents;
@@ -125,7 +125,7 @@ public class JoiCharacter extends CustomPlayer {
     // 翻牌事件出现的你的职业牌（一般设为打击）
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new Strike();
+        return new OnePunch();
     }
 
     // 卡牌轨迹颜色

@@ -12,22 +12,19 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-/**
- * 废弃
- */
-public class Strike extends CustomCard {
-    public static final String ID = "SpireJoi:Strike";
+public class OnePunch extends CustomCard {
+    public static final String ID = "SpireJoi:OnePunch";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/strike.png";
+    private static final String IMG_PATH = "joi/img/cards/one_punch.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = JOI_YELLOW;
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
 
-    public Strike() {
+    public OnePunch() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 9;
     }

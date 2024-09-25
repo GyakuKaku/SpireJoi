@@ -4,15 +4,15 @@
     "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。"
   },
-  "SpireJoi:Strike": {
-    "NAME": "给你一拳",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。"
-  },
   "SpireJoi:Cry": {
     "NAME": "哭哭",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 虚弱 。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害，给予 !M! 层 虚弱 。"
+  },
+  "SpireJoi:OnePunch": {
+    "NAME": "给你一拳",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 抽 1 张牌。"
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
