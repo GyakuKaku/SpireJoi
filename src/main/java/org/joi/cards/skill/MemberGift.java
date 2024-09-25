@@ -35,6 +35,7 @@ public class MemberGift extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
+        this.baseBlock = 7;
     }
 
     @Override

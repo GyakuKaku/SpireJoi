@@ -70,14 +70,6 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。"
   },
-  "SpireJoi:SleepTalking": {
-    "NAME": "梦话",
-    "DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
-    "EXTENDED_DESCRIPTION": [
-      "这张牌不能被打出。"
-    ]
-  },
   "SpireJoi:ZhouXinGo": {
     "NAME": "投掷(未实现)",
     "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。",
@@ -155,9 +147,17 @@
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。"
   },
   "SpireJoi:MemberGift": {
-    "NAME": "舰长礼物准备(缺少卡图)",
-    "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，使用时额外提供 !M! 点 格挡。",
-    "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，使用时额外提供 !M! 点 格挡。"
+    "NAME": "舰长礼物准备中(缺少卡图)",
+    "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，下次使用时额外提供 !M! 点 格挡。",
+    "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，下次使用时额外提供 !M! 点 格挡。"
+  },
+  "SpireJoi:SleepTalking": {
+    "NAME": "梦话",
+    "DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出。"
+    ]
   },
   "SpireJoi:GoodNight": {
     "NAME": "晚安",
