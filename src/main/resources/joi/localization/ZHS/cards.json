@@ -20,7 +20,7 @@
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:ZhouXinHelp": {
-    "NAME": "轴芯的支援",
+    "NAME": "轴芯的援助",
     "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。",
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
   },
@@ -168,6 +168,26 @@
     "NAME": "晚安",
     "DESCRIPTION": "给予全体敌人 !M! 层 睡意 。 NL 本回合不能再打出直播相关卡牌。",
     "UPGRADE_DESCRIPTION": "给予全体敌人 !M! 层 睡意 。 NL 本回合不能再打出直播相关卡牌。"
+  },
+  "SpireJoi:GiveUpInTime": {
+    "NAME": "及时放弃(未实现)",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 结束你的回合。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 结束你的回合。"
+  },
+  "SpireJoi:KitiHelp": {
+    "NAME": "招财猫的援助(未实现)",
+    "DESCRIPTION": "战斗结束时，额外获得 !M!  金币 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "战斗结束时，额外获得 !M!  金币 。 NL 消耗 。"
+  },
+  "SpireJoi:TocciHelp": {
+    "NAME": "外星小丑的援助(未实现)",
+    "DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。"
+  },
+  "SpireJoi:NagisaHelp": {
+    "NAME": "推理社社员的援助(未实现)",
+    "DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。"
   },
   "SpireJoi:ZhouXinYummy": {
     "NAME": "加餐(未实现)",
