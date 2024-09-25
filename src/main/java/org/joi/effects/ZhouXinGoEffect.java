@@ -1,12 +1,14 @@
 package org.joi.effects;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
+import org.joi.SpireJoi;
 
 public class ZhouXinGoEffect extends AbstractGameEffect {
     private float sX;
@@ -25,7 +27,8 @@ public class ZhouXinGoEffect extends AbstractGameEffect {
         this.sY = srcY;
         this.cX = sX;
         this.dX = Settings.WIDTH;
-        this.duration = 0.6F;
+        this.color = Color.WHITE.cpy();
+        this.duration = 0.3F;
     }
 
     @Override
@@ -34,6 +37,7 @@ public class ZhouXinGoEffect extends AbstractGameEffect {
         this.cX = Interpolation.linear.apply(this.dX, this.sX, this.duration / 0.5F);
 
         this.duration -= Gdx.graphics.getDeltaTime();
+        SpireJoi.logger.info("this.duration:" + this.duration);
         if (this.duration < 0.0F) {
             this.isDone = true;
         }

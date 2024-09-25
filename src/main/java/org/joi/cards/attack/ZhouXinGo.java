@@ -3,8 +3,7 @@ package org.joi.cards.attack;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -39,10 +38,10 @@ public class ZhouXinGo extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractRelic zhouxin = p.relics.stream().filter(relic -> "SpireJoi:ZhouXin".equals(relic.relicId)).findFirst().orElse(null);
         if (zhouxin != null && zhouxin instanceof ZhouXin) {
-            ((ZhouXin) zhouxin).invalidZhouXin(false);
+            ((ZhouXin) zhouxin).invalidZhouXin(true);
         }
         this.addToBot(new VFXAction(new ZhouXinGoEffect(AbstractDungeon.player.hb.cX + AbstractDungeon.player.hb.width / 2.0F, AbstractDungeon.player.hb.cY), 0.0F));
-        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override

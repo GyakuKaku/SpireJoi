@@ -72,8 +72,8 @@
   },
   "SpireJoi:ZhouXinGo": {
     "NAME": "投掷",
-    "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 NL 消耗 。"
+    "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 消耗 。",
+    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 对所有敌人造成 !D! 点伤害，轴芯变为不可用状态。 消耗 。"
   },
   "SpireJoi:WashroomSong": {
     "NAME": "厕所歌",

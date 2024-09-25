@@ -1,6 +1,7 @@
 package org.joi.contents;
 
 import com.badlogic.gdx.graphics.Color;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 
 public class ColorContents {
     // 人物选择界面按钮的图片
@@ -26,6 +27,6 @@ public class ColorContents {
     // 小尺寸的能量图标（战斗中，牌堆预览）
     public static final String ENEYGY_ORB = "joi/img/char/cost_orb.png";
     // 轴伊卡牌颜色
-    public static final Color JOI_COLOR = new Color(1.0f, 206.0F / 255.0F, 101.0F / 255.0F, 1.0F);
+    public static final Color JOI_COLOR = CardHelper.getColor(255, 206, 101);
 
 }
