@@ -165,9 +165,9 @@
     "UPGRADE_DESCRIPTION": "给予全体敌人 !M! 层 睡意 。 NL 本回合不能再打出直播相关卡牌。"
   },
   "SpireJoi:GiveUpInTime": {
-    "NAME": "及时放弃(未实现)",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 结束你的回合。",
-    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 结束你的回合。"
+    "NAME": "及时放弃",
+    "DESCRIPTION": "获得 !B! 点 格挡 ，获得1层 睡意 。 NL 结束你的回合。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，获得1层 睡意 。 NL 结束你的回合。"
   },
   "SpireJoi:KitiHelp": {
     "NAME": "招财猫的祝福(未实现)",
