@@ -20,7 +20,7 @@
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:ZhouXinHelp": {
-    "NAME": "轴芯的支援",
+    "NAME": "轴芯的饱和攻击",
     "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。 NL 消耗 。"
   },
@@ -239,5 +239,10 @@
     "NAME": "零食补充(未实现)",
     "DESCRIPTION": "每当有一张牌被 消耗 时， 抽1张牌。",
     "UPGRADE_DESCRIPTION": "每当有一张牌被 消耗 时， 抽1张牌。"
+  },
+  "SpireJoi:CielHelp": {
+    "NAME": "社畜天使的支援(未实现)",
+    "DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。"
   }
 }
