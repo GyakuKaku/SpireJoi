@@ -28,7 +28,7 @@ public class StartLive extends CustomCard {
 
     public StartLive() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 5;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         // 基础打击牌tag(潘多拉魔盒等卡牌使用)
