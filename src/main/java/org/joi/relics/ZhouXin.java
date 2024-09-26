@@ -11,19 +11,16 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 
 public class ZhouXin extends CustomRelic {
-    // 遗物ID
     public static final String ID = "SpireJoi:ZhouXin";
-    // 图片路径
     private static final String IMG_PATH = "joi/img/relics/ZhouXin.png";
+    private static final String IMG_OTL_PATH = "joi/img/relics/outline/ZhouXin.png";
     private static final String IMG_PATH_C = "joi/img/relics/ZhouXinCry.png";
-    // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;
-    // 点击音效
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
     private static final RelicStrings Relic_STRINGS = CardCrawlGame.languagePack.getRelicStrings(ID);
 
     public ZhouXin() {
-        super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
+        super(ID, ImageMaster.loadImage(IMG_PATH), ImageMaster.loadImage(IMG_OTL_PATH), RELIC_TIER, LANDING_SOUND);
     }
 
     @Override

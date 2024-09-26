@@ -10,17 +10,14 @@ import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Cat extends CustomRelic {
-    // 遗物ID
     public static final String ID = "SpireJoi:Cat";
-    // 图片路径
     private static final String IMG_PATH = "joi/img/relics/cat.png";
-    // 遗物类型
+    private static final String IMG_OTL_PATH = "joi/img/relics/outline/cat.png";
     private static final RelicTier RELIC_TIER = RelicTier.COMMON;
-    // 点击音效
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
 
     public Cat() {
-        super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
+        super(ID, ImageMaster.loadImage(IMG_PATH), ImageMaster.loadImage(IMG_OTL_PATH), RELIC_TIER, LANDING_SOUND);
     }
 
     @Override
