@@ -38,6 +38,7 @@ public class Defend extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(3);
+            initializeDescription();
         }
     }
 }
