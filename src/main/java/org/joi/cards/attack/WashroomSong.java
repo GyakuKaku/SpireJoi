@@ -27,7 +27,7 @@ public class WashroomSong extends CustomCard {
 
     public WashroomSong() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 9;
         this.isMultiDamage = true;
         this.tags.add(CardTagEnum.SCARE);
     }
