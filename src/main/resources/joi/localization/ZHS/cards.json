@@ -80,6 +80,11 @@
     "DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊醒 。",
     "UPGRADE_DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
+  "SpireJoi:LiveIdea": {
+    "NAME": "直播灵感(未实现)",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御",
@@ -231,7 +236,7 @@
     "UPGRADE_DESCRIPTION": "每打出一张直播相关卡牌时，抽 !M! 张牌。"
   },
   "SpireJoi:RechargeSnacks": {
-    "NAME": "零食补充(未实现)",
+    "NAME": "零食补充",
     "DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。",
     "UPGRADE_DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。"
   },
