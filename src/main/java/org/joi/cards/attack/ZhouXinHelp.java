@@ -24,7 +24,8 @@ public class ZhouXinHelp extends CustomCard {
 
     public ZhouXinHelp() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.exhaust = true;
+        this.baseDamage = 9;
     }
 
     @Override

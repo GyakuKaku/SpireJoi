@@ -20,9 +20,9 @@
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:ZhouXinHelp": {
-    "NAME": "轴芯的援助",
-    "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。",
-    "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。"
+    "NAME": "轴芯的支援",
+    "DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "随机对敌人造成 !D! 点伤害 X 次。 NL 消耗 。"
   },
   "SpireJoi:ChillTalk": {
     "NAME": "杂谈",
@@ -38,12 +38,12 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予敌人 !M! 层 睡意 ,给予自己 1 层 睡意 。"
   },
   "SpireJoi:ASMR": {
-    "NAME": "奥数魔刃(缺少卡图)",
+    "NAME": "奥数魔刃",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 给予全体敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予全体敌人 !M! 层 睡意 。"
   },
   "SpireJoi:LiveReplay": {
-    "NAME": "直播回放(缺少卡图)",
+    "NAME": "直播回放",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 你在这个回合内每打出过一张直播相关卡牌，就给予敌人1层 睡意 。",
     "EXTENDED_DESCRIPTION": [
       " NL （你本回合打出过",
@@ -51,7 +51,7 @@
     ]
   },
   "SpireJoi:SingingLive": {
-    "NAME": "歌回(缺少卡图)",
+    "NAME": "歌回",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。"
   },
@@ -82,7 +82,7 @@
   },
 
   "SpireJoi:Defend": {
-    "NAME": "防御(缺少卡图)",
+    "NAME": "防御",
     "DESCRIPTION": "获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
   },
@@ -102,7 +102,7 @@
     "UPGRADE_DESCRIPTION": "回复 !M! 点生命，获得1层 睡意 。 NL 消耗 。"
   },
   "SpireJoi:BottleCap": {
-    "NAME": "拧瓶盖练习(缺少卡图)",
+    "NAME": "拧瓶盖练习",
     "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 和 敏捷 。 NL 你的回合结束时，失去 !M! 点 力量 和 敏捷 。"
   },
@@ -117,12 +117,12 @@
     "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
   },
   "SpireJoi:MobileLive": {
-    "NAME": "手机电台(缺少卡图)",
+    "NAME": "手机电台",
     "DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人 !M! 层 睡意 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，给予全体敌人 !M! 层 睡意 。"
   },
   "SpireJoi:SelfAttack": {
-    "NAME": "自我攻击(缺少卡图)",
+    "NAME": "自我攻击",
     "DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 ,抽1张牌。"
   },
@@ -152,7 +152,7 @@
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。抽 !M! 张牌。"
   },
   "SpireJoi:MemberGift": {
-    "NAME": "舰长礼物准备中(缺少卡图)",
+    "NAME": "舰长礼物准备中",
     "DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，下次使用时额外提供 !M! 点 格挡。",
     "UPGRADE_DESCRIPTION": " 保留 。 获得 !B! 点 格挡 。 NL 每打出一张直播相关卡牌，下次使用时额外提供 !M! 点 格挡。"
   },
@@ -175,19 +175,19 @@
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。 NL 结束你的回合。"
   },
   "SpireJoi:KitiHelp": {
-    "NAME": "招财猫的援助(未实现)",
-    "DESCRIPTION": "战斗结束时，额外获得 !M!  金币 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "战斗结束时，额外获得 !M!  金币 。 NL 消耗 。"
+    "NAME": "招财猫的祝福(未实现)",
+    "DESCRIPTION": "战斗结束时，额外获得 !M! 金币 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "战斗结束时，额外获得 !M! 金币 。 NL 消耗 。"
   },
   "SpireJoi:TocciHelp": {
-    "NAME": "外星小丑的援助(未实现)",
+    "NAME": "外星小丑的惊喜(未实现)",
     "DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。"
+    "UPGRADE_DESCRIPTION": "赋予你三个个随机BUFF。 NL 消耗 。"
   },
   "SpireJoi:NagisaHelp": {
-    "NAME": "推理社社员的援助(未实现)",
-    "DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "赋予你两个随机BUFF。 NL 消耗 。"
+    "NAME": "推理社社员的推理(未实现)",
+    "DESCRIPTION": "检视你抽牌堆顶部的3张牌，选择1张加入手牌。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "检视你抽牌堆顶部的3张牌，选择1张加入手牌。 NL 消耗 。"
   },
   "SpireJoi:ZhouXinYummy": {
     "NAME": "加餐(未实现)",
@@ -211,7 +211,7 @@
     "UPGRADE_DESCRIPTION": "在你的每个回合开始时，额外抽 1 张牌。"
   },
   "SpireJoi:SleepWhenFree": {
-    "NAME": "有空就睡(缺少卡图)",
+    "NAME": "有空就睡",
     "DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。",
     "UPGRADE_DESCRIPTION": "如果你在回合中不打出任何攻击牌，在下一回合获得 [E] [E] 和 1 层 睡意 。"
   },
@@ -226,7 +226,7 @@
     "UPGRADE_DESCRIPTION": "获得 1 点 力量 !M! 点 敏捷 和 1 层 睡意 。"
   },
   "SpireJoi:LiveRecord": {
-    "NAME": "直播间轮播(缺少卡图)",
+    "NAME": "直播间轮播",
     "DESCRIPTION": "回合结束时敌人的 睡意 不再下降。",
     "UPGRADE_DESCRIPTION": "回合结束时敌人的 睡意 不再下降。"
   },
