@@ -81,5 +81,12 @@
     "DESCRIPTIONS": [
       "本回合不能打出直播相关卡牌。"
     ]
+  },
+  "SpireJoi:RechargeSnacksPower": {
+    "NAME": "零食补充",
+    "DESCRIPTIONS": [
+      "每当有1张牌被 #y消耗 时，抽 #b",
+      " 张牌。"
+    ]
   }
 }
