@@ -14,11 +14,11 @@ import org.joi.powers.SleepyPower;
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class MobileLive extends CustomCard {
-    public static final String ID = "SpireJoi:MobileLive";
+public class OriginalEmoticon extends CustomCard {
+    public static final String ID = "SpireJoi:OriginalEmoticon";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
-    private static final String IMG_PATH = "joi/img/cards/mobile_live.png";
+    private static final String IMG_PATH = "joi/img/cards/original_emoticon.png";
     private static final int COST = 1;
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
     private static final CardType TYPE = CardType.SKILL;
@@ -26,7 +26,7 @@ public class MobileLive extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
 
-    public MobileLive() {
+    public OriginalEmoticon() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseBlock = 7;
         this.baseMagicNumber = 1;
