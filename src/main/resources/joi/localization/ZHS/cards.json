@@ -169,6 +169,11 @@
     "DESCRIPTION": "获得 !B! 点 格挡 ，获得1层 睡意 。 NL 结束你的回合。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，获得1层 睡意 。 NL 结束你的回合。"
   },
+  "SpireJoi:ZhouXinYummy": {
+    "NAME": "加餐",
+    "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 固有 消耗 。"
+  },
   "SpireJoi:KitiHelp": {
     "NAME": "招财猫的祝福(未实现)",
     "DESCRIPTION": "战斗结束时，额外获得 !M! 金币 。 NL 消耗 。",
@@ -183,11 +188,6 @@
     "NAME": "推理社社员的推理(未实现)",
     "DESCRIPTION": "检视你抽牌堆顶部的3张牌，选择1张加入手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "检视你抽牌堆顶部的3张牌，选择1张加入手牌。 NL 消耗 。"
-  },
-  "SpireJoi:ZhouXinYummy": {
-    "NAME": "加餐(未实现)",
-    "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 回复 !M! 点生命，轴芯变为不可用状态。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 回复 !M! 点生命，轴芯变为不可用状态。 NL 消耗 。"
   },
 
   "SpireJoi:Facade": {
