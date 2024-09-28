@@ -26,7 +26,7 @@ public class Dancing extends CustomCard {
 
     public Dancing() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 14;
+        this.baseBlock = 18;
     }
 
     @Override
@@ -39,7 +39,7 @@ public class Dancing extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(6);
+            this.upgradeBlock(4);
             initializeDescription();
         }
     }
