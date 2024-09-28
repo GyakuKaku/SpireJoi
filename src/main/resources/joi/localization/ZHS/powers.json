@@ -9,8 +9,8 @@
   "SpireJoi:SleepyPower": {
     "NAME": "睡意",
     "DESCRIPTIONS": [
-      "#y睡意 每回合会减少 #b1 层。  NL  受到攻击会额外受到 #b",
-      " 点伤害。  NL  拥有 #b6 层 #y睡意 的敌人会进入 #y困倦 状态。"
+      "受到攻击会额外受到 #b",
+      " 点伤害。 NL #y睡意 超过 #b3 层的敌人会进入 #y困倦 状态。 NL #y轴伊 的 #y睡意 每回合会减少 #b1 层。"
     ]
   },
   "SpireJoi:SlumberPower": {

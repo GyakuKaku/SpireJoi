@@ -51,9 +51,7 @@ public class SleepyPower extends AbstractPower {
         this.fontScale = 8.0F;
 
         this.amount += stackAmount;
-        if (this.amount >= 6 && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
-            // 叠到五层取消并进入困倦状态
-            SpireJoi.logger.info("睡意叠加到五层");
+        if (this.amount >= 4 && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
             this.addToBot(new ApplyPowerAction(this.owner, this.owner, new SlumberPower(this.owner)));
         } else {
