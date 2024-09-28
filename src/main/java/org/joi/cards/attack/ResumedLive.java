@@ -36,7 +36,7 @@ public class ResumedLive extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.stream().anyMatch(card -> card.hasTag(CardTagEnum.LIVE))) {
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.stream().anyMatch(card -> card.hasTag(CardTagEnum.LIVE) && !this.equals(card))) {
             this.addToTop(new GainEnergyAction(1));
         }
     }
