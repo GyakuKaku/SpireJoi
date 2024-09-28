@@ -191,8 +191,8 @@
   },
   "SpireJoi:NagisaHelp": {
     "NAME": "推理社社员的推理",
-    "DESCRIPTION": "检视你抽牌堆顶部的 !M! 张牌，选择1张加入手牌。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "检视你抽牌堆顶部的 !M! 张牌，选择1张加入手牌。 NL 消耗 。"
+    "DESCRIPTION": "检视你抽牌堆顶部的 !M! 张牌，选择1张加入手牌，并在本回合的耗能变为0。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "检视你抽牌堆顶部的 !M! 张牌，选择1张加入手牌，并在本回合的耗能变为0。 NL 消耗 。"
   },
   "SpireJoi:ZhouBaHelp": {
     "NAME": "轴爸的任务(未实现)",

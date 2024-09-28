@@ -38,7 +38,7 @@ public class NagisaHelp extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }

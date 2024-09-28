@@ -46,6 +46,7 @@ public class ReasoningAction extends AbstractGameAction {
                     continue;
                 }
                 AbstractDungeon.player.drawPile.moveToHand(c, AbstractDungeon.player.drawPile);
+                c.setCostForTurn(0);
                 c.triggerWhenDrawn();
             }
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
