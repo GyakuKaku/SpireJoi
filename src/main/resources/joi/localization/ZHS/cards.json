@@ -81,7 +81,7 @@
     "UPGRADE_DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
   },
   "SpireJoi:LiveIdea": {
-    "NAME": "直播灵感(未实现)",
+    "NAME": "直播灵感",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。"
   },
@@ -195,7 +195,7 @@
     "UPGRADE_DESCRIPTION": "检视你抽牌堆顶部的 !M! 张牌，选择1张加入手牌，并在本回合的耗能变为0。 NL 消耗 。"
   },
   "SpireJoi:ZhouBaHelp": {
-    "NAME": "轴爸的任务(未实现)",
+    "NAME": "轴爸的任务",
     "DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *西瓜 加入你的手牌。 NL 消耗 。",
     "UPGRADE_DESCRIPTION": "获得 !M! 点 力量 。 NL 将一张 *西瓜+ 加入你的手牌。 NL 消耗 。"
   },
