@@ -45,7 +45,8 @@
   "SpireJoi:LiveRecordPower": {
     "NAME": "直播间轮播",
     "DESCRIPTIONS": [
-      "回合结束时敌人的 #y睡意 不再下降。"
+      "回合开始给予全体敌人 #b",
+      " 层 #y睡意 。"
     ]
   },
   "SpireJoi:MUAPower": {

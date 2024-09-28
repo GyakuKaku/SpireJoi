@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -35,16 +34,15 @@ public class SleepyPower extends AbstractPower {
         this.updateDescription();
     }
 
-    // 每回合减少一层
+    // 轴伊的睡意每回合减少一层
     @Override
     public void atEndOfRound() {
-        if (AbstractDungeon.player != null && AbstractDungeon.player.hasPower("SpireJoi:LiveRecordPower") && this.owner != null && !this.owner.isPlayer) {
-            return;
-        }
-        if (this.amount == 0) {
-            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
-        } else {
-            this.addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
+        if (this.owner != null && this.owner.isPlayer) {
+            if (this.amount == 0) {
+                this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+            } else {
+                this.addToBot(new ReducePowerAction(this.owner, this.owner, POWER_ID, 1));
+            }
         }
     }
 
@@ -53,7 +51,7 @@ public class SleepyPower extends AbstractPower {
         this.fontScale = 8.0F;
 
         this.amount += stackAmount;
-        if (this.amount >= 5 && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
+        if (this.amount >= 6 && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
             // 叠到五层取消并进入困倦状态
             SpireJoi.logger.info("睡意叠加到五层");
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));

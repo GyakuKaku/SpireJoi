@@ -2,9 +2,12 @@ package org.joi.powers;
 
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import org.joi.actions.ApplySleepyAction;
 
 public class LiveRecordPower extends AbstractPower {
     // 能力的ID
@@ -15,18 +18,27 @@ public class LiveRecordPower extends AbstractPower {
     private static final String NAME = powerStrings.NAME;
     private static final String IMG_PATH = "joi/img/icons/live_record.png";
 
-    public LiveRecordPower(AbstractCreature owner) {
+    public LiveRecordPower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = POWER_ID;
         this.owner = owner;
         this.img = ImageMaster.loadImage(IMG_PATH);
         this.type = PowerType.BUFF;
-        this.amount = -1;
+        this.amount = amount;
         this.updateDescription();
     }
 
     @Override
+    public void atStartOfTurn() {
+        for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
+            if (!mo.isDeadOrEscaped()) {
+                this.addToBot(new ApplySleepyAction(mo, AbstractDungeon.player, new SleepyPower(mo, this.amount), this.amount));
+            }
+        }
+    }
+
+    @Override
     public void updateDescription() {
-        this.description = powerStrings.DESCRIPTIONS[0];
+        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
     }
 }

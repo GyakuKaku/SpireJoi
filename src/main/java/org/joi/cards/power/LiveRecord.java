@@ -29,10 +29,7 @@ public class LiveRecord extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p != null && p.hasPower("SpireJoi:LiveRecordPower")) {
-            return;
-        }
-        this.addToBot(new ApplyPowerAction(p, p, new LiveRecordPower(p)));
+        this.addToBot(new ApplyPowerAction(p, p, new LiveRecordPower(p, 1)));
     }
 
     @Override
