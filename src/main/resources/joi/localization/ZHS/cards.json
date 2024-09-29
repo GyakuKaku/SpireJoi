@@ -180,9 +180,9 @@
     "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 固有 消耗 。"
   },
   "SpireJoi:KitiHelp": {
-    "NAME": "招财猫的祝福",
-    "DESCRIPTION": "战斗结束时，额外获得 !M! 金币 。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "战斗结束时，额外获得 !M! 金币 。 NL 消耗 。"
+    "NAME": "招财猫的保护",
+    "DESCRIPTION": "每回合开始时获得 !M! 点 格挡 。战斗结束时，额外获得13金币。",
+    "UPGRADE_DESCRIPTION": "每回合开始时获得 !M! 点 格挡 。战斗结束时，额外获得13金币。"
   },
   "SpireJoi:TocciHelp": {
     "NAME": "外星小丑的惊喜(未实现)",
