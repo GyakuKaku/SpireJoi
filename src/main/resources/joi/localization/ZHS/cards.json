@@ -254,7 +254,7 @@
     "UPGRADE_DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。"
   },
   "SpireJoi:CielHelp": {
-    "NAME": "社畜天使的支援(未实现)",
+    "NAME": "社畜天使的支援",
     "DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。",
     "UPGRADE_DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。"
   }
