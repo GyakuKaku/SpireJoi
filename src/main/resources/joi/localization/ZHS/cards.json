@@ -85,6 +85,16 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。"
   },
+  "SpireJoi:GoodCard": {
+    "NAME": "出货",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 消耗 。"
+  },
+  "SpireJoi:BadCard": {
+    "NAME": "沉船",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 消耗 。"
+  },
 
   "SpireJoi:Defend": {
     "NAME": "防御",
