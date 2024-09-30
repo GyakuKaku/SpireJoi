@@ -107,25 +107,25 @@
   "SpireJoi:ZhouxinHelpPower": {
     "NAME": "轴芯的帮助",
     "DESCRIPTIONS": [
-      ""
+      "你得到了轴芯的帮助。"
     ]
   },
   "SpireJoi:ZhoubaHelpPower": {
     "NAME": "轴爸的帮助",
     "DESCRIPTIONS": [
-      ""
+      "你得到了轴爸的帮助。"
     ]
   },
   "SpireJoi:NagisaHelpPower": {
     "NAME": "推理社社员的帮助",
     "DESCRIPTIONS": [
-      ""
+      "你得到了推理社社员的帮助。"
     ]
   },
   "SpireJoi:TocciHelpPower": {
     "NAME": "外星小丑的帮助",
     "DESCRIPTIONS": [
-      ""
+      "你得到了外星小丑的帮助。"
     ]
   }
 }
