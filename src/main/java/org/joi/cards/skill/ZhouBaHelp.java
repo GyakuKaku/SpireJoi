@@ -9,6 +9,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import org.joi.cards.special.Watermelon;
+import org.joi.powers.ZhoubaHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
@@ -39,6 +40,7 @@ public class ZhouBaHelp extends CustomCard {
             watermelon.upgrade();
         }
         this.addToBot(new MakeTempCardInHandAction(watermelon, 1));
+        this.addToBot(new ApplyPowerAction(p, p, new ZhoubaHelpPower(p)));
     }
 
     @Override

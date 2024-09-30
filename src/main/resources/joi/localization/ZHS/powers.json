@@ -91,17 +91,41 @@
     ]
   },
   "SpireJoi:CielHelpPower": {
-    "NAME": "社畜天使的援助",
+    "NAME": "社畜天使的帮助",
     "DESCRIPTIONS": [
       "在你的回合结束时，对所有敌人造成 #b",
       " 点伤害。"
     ]
   },
   "SpireJoi:KitiHelpPower": {
-    "NAME": "招财猫的保护",
+    "NAME": "招财猫的帮助",
     "DESCRIPTIONS": [
       "每回合开始时获得 #b",
       " 点 #y格挡 。"
+    ]
+  },
+  "SpireJoi:ZhouxinHelpPower": {
+    "NAME": "轴芯的帮助",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "SpireJoi:ZhoubaHelpPower": {
+    "NAME": "轴爸的帮助",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "SpireJoi:NagisaHelpPower": {
+    "NAME": "推理社社员的帮助",
+    "DESCRIPTIONS": [
+      ""
+    ]
+  },
+  "SpireJoi:TocciHelpPower": {
+    "NAME": "外星小丑的帮助",
+    "DESCRIPTIONS": [
+      ""
     ]
   }
 }

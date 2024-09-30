@@ -1,11 +1,13 @@
 package org.joi.cards.attack;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ZhouXinHelpAction;
+import org.joi.powers.ZhouxinHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
@@ -31,6 +33,7 @@ public class ZhouXinHelp extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ZhouXinHelpAction(p, m, this.damage, this.damageTypeForTurn, this.freeToPlayOnce, this.energyOnUse));
+        this.addToBot(new ApplyPowerAction(p, p, new ZhouxinHelpPower(p)));
     }
 
     @Override
