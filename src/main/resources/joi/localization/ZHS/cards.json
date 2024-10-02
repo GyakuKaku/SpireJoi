@@ -85,6 +85,11 @@
     "DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。",
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。"
   },
+  "SpireJoi:FriendshipRally": {
+    "NAME": "--",
+    "DESCRIPTION": "获得过至少三人的帮助后才可打出。 NL 你的能力中每有一个”xx的帮助“，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "获得过至少三人的帮助后才可打出。 NL 你的能力中每有一个”xx的帮助“，造成 !D! 点伤害。"
+  },
   "SpireJoi:GoodCard": {
     "NAME": "中奖",
     "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 消耗 。",
