@@ -86,9 +86,9 @@
     "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 虚无 。"
   },
   "SpireJoi:FriendshipRally": {
-    "NAME": "--",
-    "DESCRIPTION": "获得过至少三人的帮助后才可打出。 NL 你的能力中每有一个”xx的帮助“，造成 !D! 点伤害。",
-    "UPGRADE_DESCRIPTION": "获得过至少三人的帮助后才可打出。 NL 你的能力中每有一个”xx的帮助“，造成 !D! 点伤害。"
+    "NAME": "支援",
+    "DESCRIPTION": "至少获得过三人的帮助后才可打出。 NL 你的能力中每有一个”xx的帮助“，造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "至少获得过三人的帮助后才可打出。 NL 你每有一个名为'xx的帮助'的能力，造成 !D! 点伤害。"
   },
   "SpireJoi:GoodCard": {
     "NAME": "中奖",
@@ -274,7 +274,7 @@
     "UPGRADE_DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。"
   },
   "SpireJoi:CielHelp": {
-    "NAME": "社畜天使的支援",
+    "NAME": "社畜天使的掩护",
     "DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。",
     "UPGRADE_DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。"
   }
