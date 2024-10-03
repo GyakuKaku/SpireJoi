@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 import org.joi.actions.ScareDamageAllEnemiesAction;
 import org.joi.patches.CardTagEnum;
 
@@ -27,7 +28,7 @@ public class WashroomSong extends CustomCard {
 
     public WashroomSong() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 10;
+        this.baseDamage = 8;
         this.isMultiDamage = true;
         this.tags.add(CardTagEnum.SCARE);
     }
@@ -54,6 +55,10 @@ public class WashroomSong extends CustomCard {
         }
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!m.isDeadOrEscaped() && m.hasPower("SpireJoi:SlumberPower")) {
+                this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+                break;
+            }
+            if (m instanceof Lagavulin && m.intent == AbstractMonster.Intent.SLEEP) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }
