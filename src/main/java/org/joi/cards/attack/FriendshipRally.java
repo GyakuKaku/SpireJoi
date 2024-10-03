@@ -34,7 +34,7 @@ public class FriendshipRally extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (long i = 0; i < p.powers.stream().map(power -> power.ID.endsWith("HelpPower")).count(); i++) {
+        for (long i = 0; i < p.powers.stream().filter(power -> power.ID.endsWith("HelpPower")).count(); i++) {
             this.addToBot(new DamageAction(m, new DamageInfo( p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
     }
@@ -42,7 +42,7 @@ public class FriendshipRally extends CustomCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.player.powers.stream().map(power -> power.ID.endsWith("HelpPower")).count() >= 3) {
+        if (AbstractDungeon.player.powers.stream().filter(power -> power.ID.endsWith("HelpPower")).count() >= 3) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
     }
@@ -53,7 +53,7 @@ public class FriendshipRally extends CustomCard {
         if (!canUse) {
             return false;
         }
-        return p.powers.stream().map(power -> power.ID.endsWith("HelpPower")).count() >= 3;
+        return p.powers.stream().filter(power -> power.ID.endsWith("HelpPower")).count() >= 3;
     }
 
     @Override
