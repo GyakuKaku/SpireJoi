@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
+import org.joi.SpireJoi;
 import org.joi.infos.ScareDamageInfo;
 import org.joi.patches.CardTagEnum;
 
@@ -45,15 +46,14 @@ public class JumpScare extends CustomCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.stream().noneMatch(card -> card.hasTag(CardTagEnum.LIVE))) {
-            return;
-        }
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!m.isDeadOrEscaped() && m.hasPower("SpireJoi:SlumberPower")) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }
-            if (m instanceof Lagavulin && m.intent == AbstractMonster.Intent.SLEEP) {
+            SpireJoi.logger.info(m instanceof Lagavulin);
+            SpireJoi.logger.info(m.intent.name());
+            if (!m.isDeadOrEscaped() && m instanceof Lagavulin && m.intent == AbstractMonster.Intent.SLEEP) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
                 break;
             }

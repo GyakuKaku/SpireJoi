@@ -41,9 +41,6 @@ public class Trumpets extends CustomCard {
     @Override
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.stream().noneMatch(card -> card.hasTag(CardTagEnum.LIVE))) {
-            return;
-        }
         for (AbstractMonster m : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!m.isDeadOrEscaped() && m.hasPower("SpireJoi:SlumberPower")) {
                 this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
