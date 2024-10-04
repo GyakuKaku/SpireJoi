@@ -39,11 +39,11 @@ public class GachaLive extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
         float chance = 0.3F;
-        if ("今女吗".equals(AbstractDungeon.player.name) || "今天找到女朋友了吗".equals(AbstractDungeon.player.name)) {
+        if ("今女吗".equals(CardCrawlGame.playerName) || "今天找到女朋友了吗".equals(CardCrawlGame.playerName)) {
             SpireJoi.logger.info("今女吗抽头像");
             chance = 1.0F;
         } else {
-            SpireJoi.logger.info(AbstractDungeon.player.name + "抽头像");
+            SpireJoi.logger.info(CardCrawlGame.playerName + "抽头像");
         }
         float result = AbstractDungeon.cardRandomRng.random();
         SpireJoi.logger.info("抽头像:" + result);
