@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.SpireJoi;
 import org.joi.cards.special.BadCard;
 import org.joi.cards.special.GoodCard;
 import org.joi.patches.CardTagEnum;
@@ -37,10 +38,19 @@ public class GachaLive extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, p, this.block));
-        CustomCard card = AbstractDungeon.cardRandomRng.randomBoolean(0.3F) ? new GoodCard() : new BadCard();
+        float chance = 0.3F;
+        if ("今女吗".equals(AbstractDungeon.player.name) || "今天找到女朋友了吗".equals(AbstractDungeon.player.name)) {
+            SpireJoi.logger.info("今女吗抽头像");
+            chance = 1.0F;
+        } else {
+            SpireJoi.logger.info(AbstractDungeon.player.name + "抽头像");
+        }
+        float result = AbstractDungeon.cardRandomRng.random();
+        SpireJoi.logger.info("抽头像:" + result);
+        CustomCard card = result < chance ? new GoodCard() : new BadCard();
         this.addToBot(new MakeTempCardInHandAction(card, 1));
         if (this.upgraded) {
-            card = AbstractDungeon.cardRandomRng.randomBoolean(0.3F) ? new GoodCard() : new BadCard();
+            card = AbstractDungeon.cardRandomRng.randomBoolean(chance) ? new GoodCard() : new BadCard();
             this.addToBot(new MakeTempCardInHandAction(card, 1));
         }
     }
