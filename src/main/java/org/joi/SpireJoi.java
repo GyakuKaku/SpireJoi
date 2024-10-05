@@ -8,10 +8,7 @@ import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.Keyword;
-import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.localization.RelicStrings;
+import com.megacrit.cardcrawl.localization.*;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,7 +21,7 @@ import static org.joi.patches.PlayerColorEnum.JOI_CHARACTER;
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 @SpireInitializer
-public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
+public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, EditCharactersSubscriber, EditRelicsSubscriber, PostInitializeSubscriber, EditKeywordsSubscriber, AddAudioSubscriber {
     public static final Logger logger = LogManager.getLogger(SpireJoi.class.getName());
 
     public SpireJoi() {
@@ -36,13 +33,11 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
         new SpireJoi();
     }
 
-    // 注册卡牌
     @Override
     public void receiveEditCards() {
         (new AutoAdd("SpireJoi")).setDefaultSeen(true).cards();
     }
 
-    // 当开始添加人物时，调用这个方法
     @Override
     public void receiveEditCharacters() {
         BaseMod.addCharacter(new JoiCharacter(CardCrawlGame.playerName), JOI_CHARACTER_BUTTON, JOI_CHARACTER_PORTRAIT, JOI_CHARACTER);
@@ -66,9 +61,14 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
     }
 
     @Override
+    public void receivePostInitialize() {
+//        BaseMod.addEvent("SpireJoi:Burger", Burger.class, "Exordium");
+    }
+
+    @Override
     public void receiveEditKeywords() {
         Gson gson = new Gson();
-        String json = Gdx.files.internal("joi/localization/ZHS/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String json = Gdx.files.internal("joi/localization/zh/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
         KeywordsBean bean = gson.fromJson(json, KeywordsBean.class);
         for (Keyword keyword : bean.keywords) {
             logger.info("加载关键字 : " + keyword.NAMES[0]);
@@ -78,9 +78,10 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receiveEditStrings() {
-        BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/ZHS/cards.json");
-        BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/ZHS/relics.json");
-        BaseMod.loadCustomStringsFile(PowerStrings.class, "joi/localization/ZHS/powers.json");
+        BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/zh/cards.json");
+        BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/zh/relics.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, "joi/localization/zh/powers.json");
+        BaseMod.loadCustomStringsFile(EventStrings.class, "joi/localization/zh/events.json");
     }
 
     static class KeywordsBean {

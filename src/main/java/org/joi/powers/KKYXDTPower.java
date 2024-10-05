@@ -58,8 +58,8 @@ public class KKYXDTPower extends AbstractPower {
             this.img = ImageMaster.loadImage(IMG_PATH_3);
             if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
                 for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
-                    this.addToBot(new RemoveSpecificPowerAction(mo, mo, SleepyPower.POWER_ID));
-                    this.addToBot(new ApplyPowerAction(mo, mo, new SlumberPower(this.owner)));
+                    this.addToBot(new RemoveSpecificPowerAction(mo, mo, "SpireJoi:SleepyPower"));
+                    this.addToBot(new ApplyPowerAction(mo, mo, new SlumberPower(mo)));
                 }
             }
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this.ID));

@@ -43,7 +43,7 @@ public class SlumberPower extends AbstractPower {
     // 每回合是取消
     @Override
     public void atEndOfRound() {
-        addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+        this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "SpireJoi:SlumberPower"));
     }
 
     // 计算被攻击伤害
