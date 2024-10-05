@@ -25,11 +25,12 @@ public class LiveRecord extends CustomCard {
 
     public LiveRecord() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = this.magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new LiveRecordPower(p, 1)));
+        this.addToBot(new ApplyPowerAction(p, p, new LiveRecordPower(p, this.magicNumber)));
     }
 
     @Override
