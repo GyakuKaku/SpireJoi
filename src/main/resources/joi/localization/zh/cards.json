@@ -277,5 +277,11 @@
     "NAME": "社畜天使的掩护",
     "DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。",
     "UPGRADE_DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。"
+  },
+
+  "SpireJoi:Stomachache": {
+    "NAME": "肚子疼",
+    "DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。"
   }
 }
