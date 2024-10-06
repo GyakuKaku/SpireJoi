@@ -6,9 +6,9 @@ import com.megacrit.cardcrawl.events.AbstractImageEvent;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.EventStrings;
 
-public class Burger extends AbstractImageEvent {
-    public static final String ID = "SpireJoi:Burger";
-    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("SpireJoi:Burger");
+public class EatBurger extends AbstractImageEvent {
+    public static final String ID = "SpireJoi:EatBurger";
+    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("SpireJoi:EatBurger");
     public static final String NAME = eventStrings.NAME;
     public static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     public static final String[] OPTIONS = eventStrings.OPTIONS;
@@ -17,7 +17,7 @@ public class Burger extends AbstractImageEvent {
     private static final String CURSED_RESULT = DESCRIPTIONS[1];
     private static final String NORMAL_RESULT = DESCRIPTIONS[2];
     private static final String NOPE_RESULT = DESCRIPTIONS[3];
-    private Burger.CurScreen screen = Burger.CurScreen.INTRO;
+    private EatBurger.CurScreen screen = EatBurger.CurScreen.INTRO;
     private static final int PERCENT = 50;
     private static final int A_2_PERCENT = 100;
     private int percent;
@@ -26,7 +26,7 @@ public class Burger extends AbstractImageEvent {
         INTRO, RESULT;
     }
 
-    public Burger(String title, String body, String imgUrl) {
+    public EatBurger(String title, String body, String imgUrl) {
         super(NAME, DIALOG_1, "joi/img/events/burger.jpg");
 
         if (AbstractDungeon.ascensionLevel >= 15) {
