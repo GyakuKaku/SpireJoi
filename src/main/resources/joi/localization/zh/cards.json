@@ -1,4 +1,18 @@
 {
+  "SpireJoi:Watermelon": {
+    "NAME": "西瓜",
+    "DESCRIPTION": "不能被打出 。 NL 从卡组中抽到这张牌时 消耗 并获得 [E] 。",
+    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 从卡组中抽到这张牌时 消耗 并获得 [E] [E] 。",
+    "EXTENDED_DESCRIPTION": [
+      "这张牌不能被打出。"
+    ]
+  },
+  "SpireJoi:Stomachache": {
+    "NAME": "肚子疼",
+    "DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。"
+  },
+
   "SpireJoi:StartLive": {
     "NAME": "开播",
     "DESCRIPTION": "造成 !D! 点伤害，并给予敌人 !M! 层 睡意 。",
@@ -219,14 +233,6 @@
     "DESCRIPTION": "获得 !B! 点 格挡 ，随机获得 !M! 张 *中奖 或者 *没中 。",
     "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 ，随机获得 !M! 张 *中奖 或者 *没中 。"
   },
-  "SpireJoi:Watermelon": {
-    "NAME": "西瓜",
-    "DESCRIPTION": "不能被打出 。 NL 从卡组中抽到这张牌时 消耗 并获得 [E] 。",
-    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 从卡组中抽到这张牌时 消耗 并获得 [E] [E] 。",
-    "EXTENDED_DESCRIPTION": [
-      "这张牌不能被打出。"
-    ]
-  },
 
   "SpireJoi:Facade": {
     "NAME": "硬撑",
@@ -277,11 +283,5 @@
     "NAME": "社畜天使的掩护",
     "DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。",
     "UPGRADE_DESCRIPTION": "在你的回合结束时，对所有敌人造成 !M! 点伤害。"
-  },
-
-  "SpireJoi:Stomachache": {
-    "NAME": "肚子疼",
-    "DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "在你的回合结束时，受到 !M! 点伤害。 NL 消耗 。"
   }
 }
