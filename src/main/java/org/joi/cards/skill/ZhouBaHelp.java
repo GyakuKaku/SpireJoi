@@ -34,7 +34,7 @@ public class ZhouBaHelp extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, 1), 1));
+        this.addToBot(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber), this.magicNumber));
         Watermelon watermelon = new Watermelon();
         if (this.upgraded) {
             watermelon.upgrade();
@@ -47,6 +47,7 @@ public class ZhouBaHelp extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeMagicNumber(1);
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
