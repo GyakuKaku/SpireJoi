@@ -160,8 +160,7 @@ public class JoiCharacter extends CustomPlayer {
     @Override
     public ArrayList<CutscenePanel> getCutscenePanels() {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
-        // 有两个参数的，第二个参数表示出现图片时播放的音效
-        panels.add(new CutscenePanel("joi/img/char/character_portrait_temp.jpg"));
+        panels.add(new CutscenePanel("joi/img/char/true_end_temp.jpg"));
         return panels;
     }
 

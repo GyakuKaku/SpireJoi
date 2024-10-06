@@ -6,5 +6,5 @@ public class TextContents {
     // 人物介绍
     public static final String CHARACTER_DESCRIPTION = "窒息系无感情一般通过初中生";
     // 看到腐化心脏时的话
-    public static final String FACING_HEART = "......";
+    public static final String FACING_HEART = "什么东西啊...";
 }
