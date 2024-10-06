@@ -63,7 +63,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receivePostInitialize() {
-        BaseMod.addEvent("SpireJoi:EatBurger", EatBurger.class, "Exordium");
+        BaseMod.addEvent("EatBurger", EatBurger.class);
     }
 
     @Override

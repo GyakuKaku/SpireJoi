@@ -11,8 +11,8 @@ import org.joi.cards.status.Stomachache;
 import org.joi.relics.Burger;
 
 public class EatBurger extends AbstractImageEvent {
-    public static final String ID = "SpireJoi:EatBurger";
-    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("SpireJoi:EatBurger");
+    public static final String ID = "EatBurger";
+    private static final EventStrings eventStrings = CardCrawlGame.languagePack.getEventString("EatBurger");
     public static final String NAME = eventStrings.NAME;
     public static final String[] DESCRIPTIONS = eventStrings.DESCRIPTIONS;
     public static final String[] OPTIONS = eventStrings.OPTIONS;
@@ -27,7 +27,7 @@ public class EatBurger extends AbstractImageEvent {
         INTRO, RESULT;
     }
 
-    public EatBurger(String title, String body, String imgUrl) {
+    public EatBurger() {
         super(NAME, DIALOG_1, "joi/img/events/burger.jpg");
         this.imageEventText.setDialogOption(OPTIONS[0] + "30" + OPTIONS[1], CardLibrary.getCopy("SpireJoi:Stomachache"));
         this.imageEventText.setDialogOption(OPTIONS[2]);
