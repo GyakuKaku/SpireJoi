@@ -41,7 +41,7 @@ public class KKYXDT extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.updateCost(1);
+            this.upgradeBaseCost(1);
             initializeDescription();
         }
     }

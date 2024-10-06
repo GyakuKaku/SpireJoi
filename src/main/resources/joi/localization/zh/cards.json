@@ -271,7 +271,7 @@
   "SpireJoi:RechargeSnacks": {
     "NAME": "零食补充",
     "DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。",
-    "UPGRADE_DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。"
+    "UPGRADE_DESCRIPTION": "每当有1张牌被 消耗 时，抽1张牌。 NL 固有 。"
   },
   "SpireJoi:CielHelp": {
     "NAME": "社畜天使的掩护",

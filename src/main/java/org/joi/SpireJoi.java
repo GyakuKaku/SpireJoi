@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.joi.character.JoiCharacter;
+import org.joi.events.EatBurger;
 
 import java.nio.charset.StandardCharsets;
 
@@ -62,7 +63,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receivePostInitialize() {
-//        BaseMod.addEvent("SpireJoi:EatBurger", EatBurger.class, "Exordium");
+        BaseMod.addEvent("SpireJoi:EatBurger", EatBurger.class, "Exordium");
     }
 
     @Override
