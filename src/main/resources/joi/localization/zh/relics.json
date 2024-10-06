@@ -21,5 +21,12 @@
     "DESCRIPTIONS": [
       "在每回合开始时获得 [E] 。将一张 #y伤口 放入你的牌组。"
     ]
+  },
+  "SpireJoi:Burger": {
+    "NAME": "汉堡",
+    "FLAVOR": "小轴，你可以吃芝士汉堡！",
+    "DESCRIPTIONS": [
+      "在每场战斗开始时获得 [E] 。"
+    ]
   }
 }
