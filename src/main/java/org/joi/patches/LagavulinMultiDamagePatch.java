@@ -10,7 +10,7 @@ import org.joi.SpireJoi;
 import java.util.ArrayList;
 
 /**
- * 乐加维林群体伤害惊醒伤害计算
+ * 乐加维林群体伤害惊吓伤害计算
  */
 @SpirePatch(clz = AbstractCard.class, method = "calculateCardDamage")
 public class LagavulinMultiDamagePatch {

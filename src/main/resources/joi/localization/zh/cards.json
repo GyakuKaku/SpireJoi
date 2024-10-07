@@ -30,8 +30,8 @@
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
   "SpireJoi:ZhouXinHelp": {
     "NAME": "轴芯的饱和攻击",
@@ -81,8 +81,8 @@
   },
   "SpireJoi:JumpScare": {
     "NAME": "惊吓",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊醒 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 惊吓 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 惊吓 。"
   },
   "SpireJoi:ZhouXinGo": {
     "NAME": "投掷",
@@ -91,8 +91,8 @@
   },
   "SpireJoi:WashroomSong": {
     "NAME": "厕所歌",
-    "DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊醒 。",
-    "UPGRADE_DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊醒 。"
+    "DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
+    "UPGRADE_DESCRIPTION": "本回合打出过直播相关卡牌才可打出。 NL 对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
   },
   "SpireJoi:LiveIdea": {
     "NAME": "直播灵感",

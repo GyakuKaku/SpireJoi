@@ -79,7 +79,7 @@ public class SleepyPower extends AbstractPower {
     @Override
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info instanceof ScareDamageInfo) {
-            SpireJoi.logger.info("受到惊醒伤害");
+            SpireJoi.logger.info("受到惊吓伤害");
             // 结束睡意状态
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
         } else {

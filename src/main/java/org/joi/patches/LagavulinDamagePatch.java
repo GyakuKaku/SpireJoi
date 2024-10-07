@@ -8,7 +8,7 @@ import javassist.CtBehavior;
 import org.joi.SpireJoi;
 
 /**
- * 乐加维林惊醒伤害计算
+ * 乐加维林惊吓伤害计算
  */
 @SpirePatch(clz = AbstractCard.class, method = "calculateCardDamage")
 public class LagavulinDamagePatch {
