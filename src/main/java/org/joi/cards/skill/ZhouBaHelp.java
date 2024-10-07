@@ -30,6 +30,7 @@ public class ZhouBaHelp extends CustomCard {
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.cardsToPreview = new Watermelon();
     }
 
     @Override
@@ -48,6 +49,11 @@ public class ZhouBaHelp extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(1);
+            Watermelon watermelon = new Watermelon();
+            if (this.upgraded) {
+                watermelon.upgrade();
+            }
+            this.cardsToPreview = watermelon;
             this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
