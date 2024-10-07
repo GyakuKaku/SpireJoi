@@ -33,6 +33,7 @@ public class GachaLive extends CustomCard {
         this.magicNumber = this.baseMagicNumber;
         this.baseBlock = 6;
         this.tags.add(CardTagEnum.LIVE);
+        this.cardsToPreview = new BadCard();
     }
 
     @Override
