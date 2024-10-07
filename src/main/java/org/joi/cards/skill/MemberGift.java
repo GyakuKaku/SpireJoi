@@ -26,7 +26,7 @@ public class MemberGift extends CustomCard {
 
     public MemberGift() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 7;
+        this.baseBlock = 12;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.selfRetain = true;
