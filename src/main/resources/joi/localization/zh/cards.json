@@ -187,8 +187,8 @@
   },
   "SpireJoi:SleepTalking": {
     "NAME": "梦话",
-    "DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 。",
+    "DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 消耗 并抽一张牌。",
+    "UPGRADE_DESCRIPTION": "不能被打出 。 NL 如果抽到这张牌时处于 睡意 或 困倦 状态，获得 !M! 点 格挡 消耗 并抽一张牌。",
     "EXTENDED_DESCRIPTION": [
       "这张牌不能被打出。"
     ]

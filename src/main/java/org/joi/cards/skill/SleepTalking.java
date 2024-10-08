@@ -1,6 +1,8 @@
 package org.joi.cards.skill;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -24,7 +26,7 @@ public class SleepTalking extends CustomCard {
 
     public SleepTalking() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -41,6 +43,8 @@ public class SleepTalking extends CustomCard {
     public void triggerWhenDrawn() {
         if (AbstractDungeon.player.hasPower("SpireJoi:SleepyPower") || AbstractDungeon.player.hasPower("SpireJoi:SlumberPower")) {
             this.addToTop(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber));
+            this.addToTop(new ExhaustSpecificCardAction(this, AbstractDungeon.player.hand));
+            this.addToBot(new DrawCardAction(AbstractDungeon.player, 1));
         }
     }
 
