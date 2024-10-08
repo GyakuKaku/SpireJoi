@@ -14,10 +14,11 @@ import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.events.city.Vampires;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
+import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import org.joi.cards.attack.Cry;
-import org.joi.cards.attack.StartLive;
 import org.joi.cards.attack.OnePunch;
+import org.joi.cards.attack.StartLive;
 import org.joi.cards.skill.Defend;
 import org.joi.cards.skill.EndLive;
 import org.joi.contents.ColorContents;
@@ -26,9 +27,9 @@ import org.joi.relics.ZhouXin;
 
 import java.util.ArrayList;
 
-import static org.joi.contents.TextContents.*;
-
 public class JoiCharacter extends CustomPlayer {
+    // 人物文案
+    public static CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString("SpireJoi:Joi");
     // 火堆的人物立绘（行动前）
     private static final String MY_CHARACTER_SHOULDER_1 = "joi/img/char/shoulder.png";
     // 火堆的人物立绘（行动后）
@@ -96,8 +97,8 @@ public class JoiCharacter extends CustomPlayer {
 
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo(
-                CHARACTER_NAME, // 人物名字
-                CHARACTER_DESCRIPTION, // 人物介绍
+                characterStrings.NAMES[0], // 人物名字
+                characterStrings.TEXT[0], // 人物介绍
                 60, // 当前血量
                 60, // 最大血量
                 0, // 初始充能球栏位
@@ -113,7 +114,7 @@ public class JoiCharacter extends CustomPlayer {
     // 人物名字（出现在游戏左上角）
     @Override
     public String getTitle(PlayerClass playerClass) {
-        return CHARACTER_NAME;
+        return characterStrings.NAMES[0];
     }
 
     // 你的卡牌颜色（这个枚举在最下方创建）
@@ -173,7 +174,7 @@ public class JoiCharacter extends CustomPlayer {
     // 游戏中左上角显示在你的名字之后的人物名称
     @Override
     public String getLocalizedCharacterName() {
-        return CHARACTER_NAME;
+        return characterStrings.NAMES[0];
     }
 
     // 创建人物实例
@@ -185,7 +186,7 @@ public class JoiCharacter extends CustomPlayer {
     // 第三章面对心脏说的话
     @Override
     public String getSpireHeartText() {
-        return FACING_HEART;
+        return characterStrings.TEXT[1];
     }
 
     // 打心脏的颜色，不是很明显

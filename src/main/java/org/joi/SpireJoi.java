@@ -79,6 +79,7 @@ public class SpireJoi implements EditStringsSubscriber, EditCardsSubscriber, Edi
 
     @Override
     public void receiveEditStrings() {
+        BaseMod.loadCustomStringsFile(CharacterStrings.class, "joi/localization/zh/characters.json");
         BaseMod.loadCustomStringsFile(CardStrings.class, "joi/localization/zh/cards.json");
         BaseMod.loadCustomStringsFile(RelicStrings.class, "joi/localization/zh/relics.json");
         BaseMod.loadCustomStringsFile(PowerStrings.class, "joi/localization/zh/powers.json");
