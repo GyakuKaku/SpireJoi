@@ -206,7 +206,7 @@
   "SpireJoi:ZhouXinYummy": {
     "NAME": "加餐",
     "DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 固有 消耗 。"
+    "UPGRADE_DESCRIPTION": "遗物中存在健康的轴芯时才可打出。 NL 补满你的能量，轴芯变为不可用状态。 NL 固有 。 消耗 。"
   },
   "SpireJoi:KitiHelp": {
     "NAME": "招财猫的守护",
