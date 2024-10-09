@@ -12,11 +12,16 @@ import java.util.ArrayList;
  * 为直播牌添加说明
  */
 @SpirePatch(clz = TipHelper.class, method = "render")
-public class LiveTagTipPatch {
+public class CardTagTipPatch {
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert(SpriteBatch sb, AbstractCard ___card, ArrayList<String> ___KEYWORDS) {
-        if (___card != null && ___card.hasTag(CardTagEnum.LIVE) && !___KEYWORDS.contains("直播牌")) {
-            ___KEYWORDS.add("直播牌");
+        if (___card != null) {
+            if (___card.hasTag(CardTagEnum.LIVE) && !___KEYWORDS.contains("直播牌")) {
+                ___KEYWORDS.add("直播牌");
+            }
+            if (___card.hasTag(CardTagEnum.HELPER) && !___KEYWORDS.contains("支援牌")) {
+                ___KEYWORDS.add("支援牌");
+            }
         }
     }
     private static class Locator extends SpireInsertLocator {

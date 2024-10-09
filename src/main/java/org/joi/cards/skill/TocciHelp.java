@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.TocciHelpAction;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.TocciHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -28,6 +29,7 @@ public class TocciHelp extends CustomCard {
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.tags.add(CardTagEnum.HELPER);
     }
 
     @Override

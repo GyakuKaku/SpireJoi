@@ -9,6 +9,8 @@ public class CardTagEnum {
   @SpireEnum
   public static AbstractCard.CardTags LIVE;
   @SpireEnum
+  public static AbstractCard.CardTags HELPER;
+  @SpireEnum
   public static AbstractCard.CardTags SCARE;
   public CardTagEnum() {
   }

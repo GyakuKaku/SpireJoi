@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ZhouXinHelpAction;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.ZhouxinHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -28,6 +29,7 @@ public class ZhouXinHelp extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
         this.baseDamage = 9;
+        this.tags.add(CardTagEnum.HELPER);
     }
 
     @Override

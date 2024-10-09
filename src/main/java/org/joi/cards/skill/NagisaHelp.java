@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ReasoningAction;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.NagisaHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -29,6 +30,7 @@ public class NagisaHelp extends CustomCard {
         this.exhaust = true;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
+        this.tags.add(CardTagEnum.HELPER);
     }
 
     @Override

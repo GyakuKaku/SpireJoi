@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.patches.CardTagEnum;
 import org.joi.powers.CielHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
@@ -26,6 +27,7 @@ public class CielHelp extends CustomCard {
     public CielHelp() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = this.magicNumber = 2;
+        this.tags.add(CardTagEnum.HELPER);
     }
 
     @Override
