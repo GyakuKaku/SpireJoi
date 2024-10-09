@@ -24,9 +24,16 @@
   },
   "SpireJoi:Burger": {
     "NAME": "汉堡",
-    "FLAVOR": "小轴儿 你可以吃芝士汉堡儿！",
+    "FLAVOR": "小轴儿，你可以吃芝士汉堡儿。",
     "DESCRIPTIONS": [
       "在每场战斗开始时获得 [E] 。"
+    ]
+  },
+  "SpireJoi:Schedule": {
+    "NAME": "周表",
+    "FLAVOR": "每周一准时更新。",
+    "DESCRIPTIONS": [
+      "每 #b1 、 #b2 、 #b4 、 #b6 回合开始时给予全体敌人 #b1 层 #y睡意 。"
     ]
   }
 }
