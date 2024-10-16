@@ -67,7 +67,7 @@ public class JoiCharacter extends CustomPlayer {
                 CORPSE_IMAGE, // 人物死亡图像
                 this.getLoadout(),
                 0.0F, 0.0F,
-                200.0F, 220.0F, // 人物碰撞箱大小，越大的人物模型这个越大
+                120.0F, 280.0F, // 人物碰撞箱大小，越大的人物模型这个越大
                 new EnergyManager(3) // 初始每回合的能量
         );
     }
@@ -99,8 +99,8 @@ public class JoiCharacter extends CustomPlayer {
         return new CharSelectInfo(
                 characterStrings.NAMES[0], // 人物名字
                 characterStrings.TEXT[0], // 人物介绍
-                60, // 当前血量
-                60, // 最大血量
+                68, // 当前血量
+                68, // 最大血量
                 0, // 初始充能球栏位
                 99, // 初始携带金币
                 5, // 每回合抽牌数量
