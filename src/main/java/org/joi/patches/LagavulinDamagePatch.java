@@ -15,7 +15,7 @@ public class LagavulinDamagePatch {
     @SpireInsertPatch(locator = Locator.class)
     public static void Insert(AbstractCard _inst, AbstractMonster mo, @ByRef float[] ___tmp) {
         if (mo instanceof Lagavulin && mo.intent == AbstractMonster.Intent.SLEEP && _inst != null && _inst.hasTag(CardTagEnum.SCARE)) {
-            ___tmp[0] = ___tmp[0] * 3;
+            ___tmp[0] = ___tmp[0] * 4;
         }
     }
     private static class Locator extends SpireInsertLocator {

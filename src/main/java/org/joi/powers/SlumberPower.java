@@ -59,8 +59,8 @@ public class SlumberPower extends AbstractPower {
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType, AbstractCard card) {
         if (card != null && card.hasTag(CardTagEnum.SCARE) && damageType == DamageInfo.DamageType.NORMAL) {
-            // 惊吓造成三倍伤害
-            return damage * 3;
+            // 惊吓造成四倍伤害
+            return damage * 4;
         } else {
             return this.atDamageReceive(damage, damageType);
         }
