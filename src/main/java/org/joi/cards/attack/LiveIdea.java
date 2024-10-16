@@ -25,7 +25,7 @@ public class LiveIdea extends CustomCard {
 
     public LiveIdea() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 12;
+        this.baseDamage = 16;
         this.isEthereal = true;
     }
 

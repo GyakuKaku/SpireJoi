@@ -40,8 +40,8 @@
   },
   "SpireJoi:ChillTalk": {
     "NAME": "杂谈",
-    "DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
-    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 2 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "DESCRIPTION": "每有一张手牌，造成 3 点伤害。 NL 给予敌人 !M! 层 睡意 。",
+    "UPGRADE_DESCRIPTION": "每有一张手牌，造成 3 点伤害。 NL 给予敌人 !M! 层 睡意 。",
     "EXTENDED_DESCRIPTION": [
       " NL （造成 !D! 点伤害。）"
     ]

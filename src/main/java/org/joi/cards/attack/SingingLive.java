@@ -25,7 +25,7 @@ public class SingingLive extends CustomCard {
 
     public SingingLive() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 8;
         this.isMultiDamage = true;
         this.tags.add(CardTagEnum.LIVE);
     }

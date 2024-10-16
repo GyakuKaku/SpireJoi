@@ -28,7 +28,7 @@ public class OriginalEmoticon extends CustomCard {
 
     public OriginalEmoticon() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 7;
+        this.baseBlock = 8;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.LIVE);

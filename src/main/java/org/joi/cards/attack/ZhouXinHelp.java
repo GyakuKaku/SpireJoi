@@ -28,7 +28,7 @@ public class ZhouXinHelp extends CustomCard {
     public ZhouXinHelp() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;
-        this.baseDamage = 9;
+        this.baseDamage = 10;
         this.tags.add(CardTagEnum.HELPER);
     }
 

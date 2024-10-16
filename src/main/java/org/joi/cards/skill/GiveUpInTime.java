@@ -27,7 +27,7 @@ public class GiveUpInTime extends CustomCard {
 
     public GiveUpInTime() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 12;
+        this.baseBlock = 15;
     }
 
     @Override

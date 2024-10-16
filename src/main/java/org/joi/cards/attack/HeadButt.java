@@ -28,7 +28,7 @@ public class HeadButt extends CustomCard {
 
     public HeadButt() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 9;
+        this.baseDamage = 10;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);

@@ -29,7 +29,7 @@ public class Yawn extends CustomCard {
 
     public Yawn() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 3;
+        this.baseBlock = 4;
         this.tags.add(CardTagEnum.SLEEPY);
     }
 

@@ -45,7 +45,7 @@ public class ChillTalk extends CustomCard {
     @Override
     public void applyPowers() {
         int count = (int) AbstractDungeon.player.hand.group.stream().filter(item -> item != this).count();
-        this.baseDamage = count * 2;
+        this.baseDamage = count * 3;
         super.applyPowers();
         this.rawDescription = CARD_STRINGS.DESCRIPTION + CARD_STRINGS.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

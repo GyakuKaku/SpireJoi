@@ -31,7 +31,7 @@ public class GachaLive extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-        this.baseBlock = 6;
+        this.baseBlock = 7;
         this.tags.add(CardTagEnum.LIVE);
         this.cardsToPreview = new BadCard();
     }

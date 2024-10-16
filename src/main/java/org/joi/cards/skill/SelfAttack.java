@@ -27,7 +27,7 @@ public class SelfAttack extends CustomCard {
 
     public SelfAttack() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 5;
+        this.baseBlock = 6;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }

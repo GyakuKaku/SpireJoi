@@ -29,7 +29,7 @@ public class LiveReplay extends CustomCard {
 
     public LiveReplay() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 7;
         this.magicNumber = this.baseMagicNumber;
         this.tags.add(CardTagEnum.SLEEPY);
     }

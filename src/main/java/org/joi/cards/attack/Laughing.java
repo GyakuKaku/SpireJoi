@@ -29,7 +29,7 @@ public class Laughing extends CustomCard {
 
     public Laughing() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 9;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }
