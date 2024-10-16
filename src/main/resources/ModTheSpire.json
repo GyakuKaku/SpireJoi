@@ -3,7 +3,7 @@
   "name": "轴伊Joi",
   "author_list": ["Gyaku"],
   "description": "轴伊Joi角色MOD。 \n卡面素材来源网络，如有版权问题删除致歉。",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.0",
   "dependencies": ["basemod"]
