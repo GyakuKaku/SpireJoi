@@ -50,7 +50,7 @@ public class SlumberPower extends AbstractPower {
     @Override
     public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
         if (damageType == DamageInfo.DamageType.NORMAL && this.owner != null && !this.owner.hasPower("SpireJoi:LetterOfApologyPower")) {
-            return damage * 2;
+            return damage * 3;
         }
         return damage;
     }

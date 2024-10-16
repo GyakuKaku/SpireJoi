@@ -16,7 +16,7 @@
   "SpireJoi:SlumberPower": {
     "NAME": "困倦",
     "DESCRIPTIONS": [
-      "拥有 #y困倦 的生物造成的伤害减少 #b25 %。 NL #y困倦 的生物不会再产生睡意，且本回合从 #y攻击 受到的伤害翻倍。 NL #y困倦 状态持续到本回合结束。"
+      "拥有 #y困倦 的生物造成的伤害减少 #b25 %。 NL #y困倦 的生物不会再产生睡意，且本回合从 #y攻击 受到的伤害变为三倍。 NL #y困倦 状态持续到本回合结束。"
     ]
   },
   "SpireJoi:LiveRewardPower": {
