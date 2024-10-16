@@ -30,7 +30,7 @@ public class MUA extends CustomCard {
         this.exhaust = true;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
-        this.baseDamage = 30;
+        this.baseDamage = 28;
     }
 
     @Override

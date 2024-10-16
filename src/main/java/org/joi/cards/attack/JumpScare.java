@@ -34,7 +34,7 @@ public class JumpScare extends CustomCard {
 
     public JumpScare() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 10;
+        this.baseDamage = 9;
         this.tags.add(CardTagEnum.SCARE);
     }
 
