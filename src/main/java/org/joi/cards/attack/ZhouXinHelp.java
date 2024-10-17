@@ -34,7 +34,7 @@ public class ZhouXinHelp extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ZhouXinHelpAction(p, m, this.damage, this.damageTypeForTurn, this.freeToPlayOnce, this.energyOnUse));
+        this.addToBot(new ZhouXinHelpAction(this, p, m, this.damage, this.damageTypeForTurn, this.freeToPlayOnce, this.energyOnUse));
         this.addToBot(new ApplyPowerAction(p, p, new ZhouxinHelpPower(p)));
     }
 
