@@ -161,7 +161,7 @@ public class JoiCharacter extends CustomPlayer {
     @Override
     public ArrayList<CutscenePanel> getCutscenePanels() {
         ArrayList<CutscenePanel> panels = new ArrayList<>();
-        panels.add(new CutscenePanel("joi/img/char/true_end_temp.jpg"));
+        panels.add(new CutscenePanel("joi/img/char/true_end.jpg"));
         return panels;
     }
 
