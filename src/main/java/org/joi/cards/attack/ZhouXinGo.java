@@ -30,7 +30,7 @@ public class ZhouXinGo extends CustomCard {
 
     public ZhouXinGo() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 28;
+        this.baseDamage = 24;
         this.isMultiDamage = true;
         this.exhaust = true;
     }
@@ -59,7 +59,7 @@ public class ZhouXinGo extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(6);
+            this.upgradeDamage(4);
             initializeDescription();
         }
     }
