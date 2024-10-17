@@ -28,7 +28,7 @@ public class FriendshipRally extends CustomCard {
 
     public FriendshipRally() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 24;
+        this.baseDamage = 18;
     }
 
     @Override

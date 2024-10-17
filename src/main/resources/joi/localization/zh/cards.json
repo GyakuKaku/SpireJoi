@@ -30,8 +30,8 @@
   },
   "SpireJoi:Trumpets": {
     "NAME": "喇叭",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。",
-    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。"
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。 NL 保留 。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 惊吓 。 NL 保留 。"
   },
   "SpireJoi:ZhouXinHelp": {
     "NAME": "轴芯的饱和攻击",
@@ -142,8 +142,8 @@
   },
   "SpireJoi:MUA": {
     "NAME": "MUA",
-    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
   },
   "SpireJoi:OriginalEmoticon": {
     "NAME": "发呆",
@@ -152,8 +152,8 @@
   },
   "SpireJoi:SelfAttack": {
     "NAME": "自我攻击",
-    "DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 。",
-    "UPGRADE_DESCRIPTION": "消耗一张手牌，受到 !M! 点伤害，获得 !B! 点 格挡 ,抽1张牌。"
+    "DESCRIPTION": "消耗一张手牌，失去 !M! 点生命，获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": "消耗一张手牌，失去 !M! 点生命，获得 !B! 点 格挡 ,抽1张牌。"
   },
   "SpireJoi:KKYXDT": {
     "NAME": "困困夜行电台",

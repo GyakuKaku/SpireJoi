@@ -62,6 +62,7 @@ public class LiveReplay extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeDamage(4);
             initializeDescription();
         }
     }

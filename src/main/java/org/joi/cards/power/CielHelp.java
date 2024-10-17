@@ -26,7 +26,7 @@ public class CielHelp extends CustomCard {
 
     public CielHelp() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = this.magicNumber = 2;
+        this.baseMagicNumber = this.magicNumber = 3;
         this.tags.add(CardTagEnum.HELPER);
     }
 

@@ -30,6 +30,7 @@ public class Trumpets extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 6;
         this.isMultiDamage = true;
+        this.selfRetain = true;
         this.tags.add(CardTagEnum.SCARE);
     }
 
