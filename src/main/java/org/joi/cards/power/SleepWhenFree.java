@@ -37,7 +37,7 @@ public class SleepWhenFree extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.upgradeBaseCost(0);
             initializeDescription();
         }
     }

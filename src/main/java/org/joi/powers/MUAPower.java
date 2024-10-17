@@ -37,7 +37,10 @@ public class MUAPower extends AbstractPower {
     }
 
     @Override
-    public void atEndOfRound() {
+    public void atEndOfTurn(boolean isPlayer) {
+        if (!isPlayer) {
+            return;
+        }
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             if (this.ready) {
                 CardCrawlGame.sound.playA("muaVoice", 0);

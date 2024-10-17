@@ -142,8 +142,8 @@
   },
   "SpireJoi:MUA": {
     "NAME": "MUA",
-    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。",
-    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
+    "DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 你的下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "给予所有敌人 !M! 层 睡意 。 NL 你的下个回合结束时对所有敌人造成 !D! 点攻击伤害。 NL 消耗 。"
   },
   "SpireJoi:OriginalEmoticon": {
     "NAME": "发呆",
