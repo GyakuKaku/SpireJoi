@@ -46,7 +46,7 @@ public class ZhouXinGoEffect extends AbstractGameEffect {
     @Override
     public void render(SpriteBatch sb) {
         sb.setColor(this.color);
-        sb.draw(this.img, (this.cX - (float)(img.getWidth() / 2.0)), this.sY, this.img.getWidth(), this.img.getHeight());
+        sb.draw(this.img, (this.cX - (float)(img.getWidth() * Settings.scale / 2.0)), this.sY, this.img.getWidth() * Settings.scale, this.img.getHeight() * Settings.scale);
     }
 
     @Override
