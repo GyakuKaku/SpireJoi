@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.BufferPower;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.CielHelpPower;
 
@@ -33,6 +34,7 @@ public class CielHelp extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int stack = this.magicNumber;
+        this.addToBot(new ApplyPowerAction(p, p, new BufferPower(p, 1), 1));
         this.addToBot(new ApplyPowerAction(p, p, new CielHelpPower(p, stack), stack));
     }
 
@@ -40,7 +42,7 @@ public class CielHelp extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }
