@@ -1,6 +1,5 @@
 package org.joi.cards.attack;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -10,12 +9,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.actions.ApplySleepyAction;
+import org.joi.cards.JoiCard;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-public class ASMR extends CustomCard {
+public class ASMR extends JoiCard {
     public static final String ID = "SpireJoi:ASMR";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
@@ -38,7 +38,8 @@ public class ASMR extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        int neoDamage = this.handleUkeleleDamage(damage);
+        this.addToBot(new DamageAction(m, new DamageInfo(p, neoDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
                 this.addToBot(new ApplySleepyAction(mo, p, new SleepyPower(mo, this.magicNumber), this.magicNumber));

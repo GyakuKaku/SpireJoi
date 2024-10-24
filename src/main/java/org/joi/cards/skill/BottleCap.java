@@ -3,7 +3,7 @@ package org.joi.cards.skill;
 /**
  * 废弃
  */
-//public class BottleCap extends CustomCard {
+//public class BottleCap extends JoiCard {
 //    public static final String ID = "SpireJoi:BottleCap";
 //    private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
 //    private static final String NAME = CARD_STRINGS.NAME;

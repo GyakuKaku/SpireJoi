@@ -1,6 +1,5 @@
 package org.joi.cards.attack;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,11 +9,12 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.cards.JoiCard;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class FriendshipRally extends CustomCard {
+public class FriendshipRally extends JoiCard {
     public static final String ID = "SpireJoi:FriendshipRally";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

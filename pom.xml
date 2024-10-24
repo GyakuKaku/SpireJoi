@@ -19,21 +19,21 @@
             <artifactId>slaythespire</artifactId>
             <scope>system</scope>
             <version>2022-12-18</version>
-            <systemPath>${steamPath}/common/SlayTheSpire/desktop-1.0.jar</systemPath>
+            <systemPath>D:/GyakuProjects/SpireJoi/lib/desktop-1.0.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>basemod</groupId>
             <artifactId>basemod</artifactId>
             <scope>system</scope>
             <version>5.54.1</version>
-            <systemPath>${steamPath}/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
+            <systemPath>D:/GyakuProjects/SpireJoi/lib/BaseMod.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
             <scope>system</scope>
             <version>3.30.0</version>
-            <systemPath>${steamPath}/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
+            <systemPath>D:/GyakuProjects/SpireJoi/lib/ModTheSpire.jar</systemPath>
         </dependency>
     </dependencies>
 

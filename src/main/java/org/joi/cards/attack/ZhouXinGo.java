@@ -1,6 +1,5 @@
 package org.joi.cards.attack;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -10,13 +9,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import org.joi.cards.JoiCard;
 import org.joi.effects.ZhouXinGoEffect;
 import org.joi.relics.ZhouXin;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class ZhouXinGo extends CustomCard {
+public class ZhouXinGo extends JoiCard {
     public static final String ID = "SpireJoi:ZhouXinGo";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

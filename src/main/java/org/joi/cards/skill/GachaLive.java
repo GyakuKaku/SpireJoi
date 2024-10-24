@@ -9,13 +9,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import org.joi.SpireJoi;
+import org.joi.cards.JoiCard;
 import org.joi.cards.special.BadCard;
 import org.joi.cards.special.GoodCard;
 import org.joi.patches.CardTagEnum;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-public class GachaLive extends CustomCard {
+public class GachaLive extends JoiCard {
     public static final String ID = "SpireJoi:GachaLive";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

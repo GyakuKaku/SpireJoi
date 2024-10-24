@@ -1,19 +1,19 @@
 package org.joi.cards.power;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.BufferPower;
+import org.joi.cards.JoiCard;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.CielHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class CielHelp extends CustomCard {
+public class CielHelp extends JoiCard {
     public static final String ID = "SpireJoi:CielHelp";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

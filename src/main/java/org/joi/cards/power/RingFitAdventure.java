@@ -1,6 +1,5 @@
 package org.joi.cards.power;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -9,13 +8,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import org.joi.actions.ApplySleepyAction;
+import org.joi.cards.JoiCard;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.SleepyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class RingFitAdventure extends CustomCard {
+public class RingFitAdventure extends JoiCard {
     public static final String ID = "SpireJoi:RingFitAdventure";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

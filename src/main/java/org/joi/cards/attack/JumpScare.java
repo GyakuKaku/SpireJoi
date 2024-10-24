@@ -1,6 +1,5 @@
 package org.joi.cards.attack;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,6 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.monsters.exordium.Lagavulin;
 import org.joi.SpireJoi;
+import org.joi.cards.JoiCard;
 import org.joi.infos.ScareDamageInfo;
 import org.joi.patches.CardTagEnum;
 
@@ -20,7 +20,7 @@ import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 /**
  * 废弃
  */
-public class JumpScare extends CustomCard {
+public class JumpScare extends JoiCard {
     public static final String ID = "SpireJoi:JumpScare";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

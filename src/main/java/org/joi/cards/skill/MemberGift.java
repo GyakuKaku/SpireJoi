@@ -1,18 +1,18 @@
 package org.joi.cards.skill;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.cards.JoiCard;
 import org.joi.patches.CardTagEnum;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class MemberGift extends CustomCard {
+public class MemberGift extends JoiCard {
     public static final String ID = "SpireJoi:MemberGift";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

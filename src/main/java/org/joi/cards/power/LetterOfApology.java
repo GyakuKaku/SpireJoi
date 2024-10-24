@@ -1,18 +1,18 @@
 package org.joi.cards.power;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.cards.JoiCard;
 import org.joi.powers.LetterOfApologyPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
 
-public class LetterOfApology extends CustomCard {
+public class LetterOfApology extends JoiCard {
     public static final String ID = "SpireJoi:LetterOfApology";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

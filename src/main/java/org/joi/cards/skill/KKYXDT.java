@@ -1,17 +1,17 @@
 package org.joi.cards.skill;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.joi.cards.JoiCard;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.KKYXDTPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-public class KKYXDT extends CustomCard {
+public class KKYXDT extends JoiCard {
     public static final String ID = "SpireJoi:KKYXDT";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;

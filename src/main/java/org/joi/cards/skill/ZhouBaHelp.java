@@ -1,6 +1,5 @@
 package org.joi.cards.skill;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -8,13 +7,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import org.joi.cards.JoiCard;
 import org.joi.cards.special.Watermelon;
 import org.joi.patches.CardTagEnum;
 import org.joi.powers.ZhoubaHelpPower;
 
 import static org.joi.patches.PlayerColorEnum.JOI_YELLOW;
 
-public class ZhouBaHelp extends CustomCard {
+public class ZhouBaHelp extends JoiCard {
     public static final String ID = "SpireJoi:ZhouBaHelp";
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = CARD_STRINGS.NAME;
