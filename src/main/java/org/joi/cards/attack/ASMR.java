@@ -38,8 +38,7 @@ public class ASMR extends JoiCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int neoDamage = this.handleUkeleleDamage(damage);
-        this.addToBot(new DamageAction(m, new DamageInfo(p, neoDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         for (AbstractMonster mo : (AbstractDungeon.getCurrRoom()).monsters.monsters) {
             if (!mo.isDeadOrEscaped()) {
                 this.addToBot(new ApplySleepyAction(mo, p, new SleepyPower(mo, this.magicNumber), this.magicNumber));
