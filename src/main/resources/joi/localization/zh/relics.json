@@ -35,5 +35,12 @@
     "DESCRIPTIONS": [
       "每 #b1 、 #b2 、 #b4 、 #b6 回合开始时给予全体敌人 #b1 层 #y睡意 。"
     ]
+  },
+  "SpireJoi:Ukulele": {
+    "NAME": "尤克里里",
+    "FLAVOR": "还记得那场音乐会的烟火......",
+    "DESCRIPTIONS": [
+      "直播相关攻击卡牌造成 #b3 点额外伤害。"
+    ]
   }
 }
