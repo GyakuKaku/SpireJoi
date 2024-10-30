@@ -42,5 +42,12 @@
     "DESCRIPTIONS": [
       "直播相关攻击卡牌造成 #b3 点额外伤害。"
     ]
+  },
+  "SpireJoi:AlcoholWipes": {
+    "NAME": "酒精湿巾",
+    "FLAVOR": "'喝了？' NL '嗯，九斤十斤。' NL '？'",
+    "DESCRIPTIONS": [
+      "每当你使用药水时，给予全体敌人 #b1 层 易伤 。"
+    ]
   }
 }
